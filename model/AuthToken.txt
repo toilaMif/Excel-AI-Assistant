@@ -1,0 +1,28 @@
+How to Get ngrok.set_auth_token
+
+1. Go to https://dashboard.ngrok.com
+2. Sign up or log in using GitHub / Google / Email.
+3. After logging in, open the "Getting Started" → "Your Authtoken" tab.
+4. You will find your token, which looks like this:
+   2Q8b7xXxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+---
+
+Why Use It on Kaggle?
+
+- Expose FastAPI/Flask API to the Internet
+  Kaggle notebooks run in a cloud environment, but by default, they are only accessible internally (no public ports).
+  Using ngrok with your auth token creates a public URL like:
+  https://xxxx.ngrok-free.app
+  → Anyone can call your API through this link.
+
+- Persistent and Stable Tunnels
+  Without an auth token, ngrok only provides temporary tunnels that may disconnect.
+  With an auth token, the connection is more stable and lasts longer.
+
+- Quick Demo / Sharing
+  Perfect for sharing your FastAPI/Flask backend directly from Kaggle without deploying to AWS/GCP/Azure.
+
+---
+
+⚡ Basically, ngrok.set_auth_token on Kaggle lets you publicly expose your API just like it’s deployed on a real server.

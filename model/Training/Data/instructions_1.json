@@ -1,0 +1,330 @@
+[
+  {
+    "instruction": "Tính tổng cột DoanhThu",
+    "response": "result = df['DoanhThu'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột ChiPhi",
+    "response": "result = df['ChiPhi'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột LoiNhuan",
+    "response": "result = df['LoiNhuan'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột SoLuongBan",
+    "response": "result = df['SoLuongBan'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột GiaSanPham",
+    "response": "result = df['GiaSanPham'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột KhachHangMoi",
+    "response": "result = df['KhachHangMoi'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột ChiPhiQuangCao",
+    "response": "result = df['ChiPhiQuangCao'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột DoanhThuOnline",
+    "response": "result = df['DoanhThuOnline'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột TyLeChuyenDoi",
+    "response": "result = df['TyLeChuyenDoi'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột DiemDanhGia",
+    "response": "result = df['DiemDanhGia'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột DoanhThu",
+    "response": "result = df['DoanhThu'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột ChiPhi",
+    "response": "result = df['ChiPhi'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột LoiNhuan",
+    "response": "result = df['LoiNhuan'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột SoLuongBan",
+    "response": "result = df['SoLuongBan'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột GiaSanPham",
+    "response": "result = df['GiaSanPham'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột KhachHangMoi",
+    "response": "result = df['KhachHangMoi'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột ChiPhiQuangCao",
+    "response": "result = df['ChiPhiQuangCao'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột DoanhThuOnline",
+    "response": "result = df['DoanhThuOnline'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột TyLeChuyenDoi",
+    "response": "result = df['TyLeChuyenDoi'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột DiemDanhGia",
+    "response": "result = df['DiemDanhGia'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột DoanhThu",
+    "response": "result = df['DoanhThu'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột ChiPhi",
+    "response": "result = df['ChiPhi'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột LoiNhuan",
+    "response": "result = df['LoiNhuan'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột SoLuongBan",
+    "response": "result = df['SoLuongBan'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột GiaSanPham",
+    "response": "result = df['GiaSanPham'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột KhachHangMoi",
+    "response": "result = df['KhachHangMoi'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột ChiPhiQuangCao",
+    "response": "result = df['ChiPhiQuangCao'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột DoanhThuOnline",
+    "response": "result = df['DoanhThuOnline'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột TyLeChuyenDoi",
+    "response": "result = df['TyLeChuyenDoi'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột DiemDanhGia",
+    "response": "result = df['DiemDanhGia'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột DoanhThu",
+    "response": "result = df['DoanhThu'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột ChiPhi",
+    "response": "result = df['ChiPhi'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột LoiNhuan",
+    "response": "result = df['LoiNhuan'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột SoLuongBan",
+    "response": "result = df['SoLuongBan'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột GiaSanPham",
+    "response": "result = df['GiaSanPham'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột KhachHangMoi",
+    "response": "result = df['KhachHangMoi'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột ChiPhiQuangCao",
+    "response": "result = df['ChiPhiQuangCao'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột DoanhThuOnline",
+    "response": "result = df['DoanhThuOnline'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột TyLeChuyenDoi",
+    "response": "result = df['TyLeChuyenDoi'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột DiemDanhGia",
+    "response": "result = df['DiemDanhGia'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột DoanhThu",
+    "response": "df = df.sort_values('DoanhThu')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột ChiPhi",
+    "response": "df = df.sort_values('ChiPhi')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột LoiNhuan",
+    "response": "df = df.sort_values('LoiNhuan')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột SoLuongBan",
+    "response": "df = df.sort_values('SoLuongBan')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột GiaSanPham",
+    "response": "df = df.sort_values('GiaSanPham')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột KhachHangMoi",
+    "response": "df = df.sort_values('KhachHangMoi')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột ChiPhiQuangCao",
+    "response": "df = df.sort_values('ChiPhiQuangCao')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột DoanhThuOnline",
+    "response": "df = df.sort_values('DoanhThuOnline')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột TyLeChuyenDoi",
+    "response": "df = df.sort_values('TyLeChuyenDoi')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột DiemDanhGia",
+    "response": "df = df.sort_values('DiemDanhGia')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột DoanhThu",
+    "response": "df = df.sort_values('DoanhThu', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột ChiPhi",
+    "response": "df = df.sort_values('ChiPhi', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột LoiNhuan",
+    "response": "df = df.sort_values('LoiNhuan', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột SoLuongBan",
+    "response": "df = df.sort_values('SoLuongBan', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột GiaSanPham",
+    "response": "df = df.sort_values('GiaSanPham', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột KhachHangMoi",
+    "response": "df = df.sort_values('KhachHangMoi', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột ChiPhiQuangCao",
+    "response": "df = df.sort_values('ChiPhiQuangCao', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột DoanhThuOnline",
+    "response": "df = df.sort_values('DoanhThuOnline', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột TyLeChuyenDoi",
+    "response": "df = df.sort_values('TyLeChuyenDoi', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột DiemDanhGia",
+    "response": "df = df.sort_values('DiemDanhGia', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột DoanhThu (giá trị > 50)",
+    "response": "filtered_data = df[df['DoanhThu'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột ChiPhi (giá trị > 50)",
+    "response": "filtered_data = df[df['ChiPhi'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột LoiNhuan (giá trị > 50)",
+    "response": "filtered_data = df[df['LoiNhuan'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột SoLuongBan (giá trị > 50)",
+    "response": "filtered_data = df[df['SoLuongBan'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột GiaSanPham (giá trị > 50)",
+    "response": "filtered_data = df[df['GiaSanPham'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột KhachHangMoi (giá trị > 50)",
+    "response": "filtered_data = df[df['KhachHangMoi'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột ChiPhiQuangCao (giá trị > 50)",
+    "response": "filtered_data = df[df['ChiPhiQuangCao'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột DoanhThuOnline (giá trị > 50)",
+    "response": "filtered_data = df[df['DoanhThuOnline'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột TyLeChuyenDoi (giá trị > 50)",
+    "response": "filtered_data = df[df['TyLeChuyenDoi'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột DiemDanhGia (giá trị > 50)",
+    "response": "filtered_data = df[df['DiemDanhGia'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột DoanhThu",
+    "response": "df['DoanhThu'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DoanhThu')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột ChiPhi",
+    "response": "df['ChiPhi'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột ChiPhi')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột LoiNhuan",
+    "response": "df['LoiNhuan'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột LoiNhuan')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột SoLuongBan",
+    "response": "df['SoLuongBan'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột SoLuongBan')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột GiaSanPham",
+    "response": "df['GiaSanPham'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột GiaSanPham')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột KhachHangMoi",
+    "response": "df['KhachHangMoi'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột KhachHangMoi')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột ChiPhiQuangCao",
+    "response": "df['ChiPhiQuangCao'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột ChiPhiQuangCao')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột DoanhThuOnline",
+    "response": "df['DoanhThuOnline'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DoanhThuOnline')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột TyLeChuyenDoi",
+    "response": "df['TyLeChuyenDoi'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột TyLeChuyenDoi')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột DiemDanhGia",
+    "response": "df['DiemDanhGia'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DiemDanhGia')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ cột trung bình các cột",
+    "response": "means = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ đường trung bình các cột",
+    "response": "means = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nplt.show()"
+  }
+]

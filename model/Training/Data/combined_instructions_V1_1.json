@@ -1,0 +1,334 @@
+[
+  {
+    "instruction": "Bạn có thể tính tổng các giá trị trong cột DoanhThuThang và sau đó sắp xếp toàn bộ dữ liệu theo thứ tự tăng dần của cột ChiPhiSanXuat không?",
+    "response": "total_doanhthuthang = df['DoanhThuThang'].sum()\ndf = df.sort_values('ChiPhiSanXuat')\nprint('Tổng cột DoanhThuThang:', total_doanhthuthang)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy tính trung bình của cột ChiPhiSanXuat đi, rồi tìm giá trị lớn nhất trong cột LoiNhuanThang nhé!",
+    "response": "mean_chiphisanxuat = df['ChiPhiSanXuat'].mean()\nmax_loinhuanthang = df['LoiNhuanThang'].max()\nprint('Trung bình cột ChiPhiSanXuat:', mean_chiphisanxuat)\nprint('Max cột LoiNhuanThang:', max_loinhuanthang)"
+  },
+  {
+    "instruction": "Lọc ra những hàng mà giá trị cột DoanhThuThang lớn hơn 50, sau đó tính tổng của những giá trị đó trong cột DoanhThuThang được chứ?",
+    "response": "filtered_doanhthuthang = df[df['DoanhThuThang'] > 50]\ntotal_doanhthuthang = filtered_doanhthuthang['DoanhThuThang'].sum()\nprint('Tổng cột DoanhThuThang (giá trị > 50):', total_doanhthuthang)"
+  },
+  {
+    "instruction": "Tìm giá trị nhỏ nhất ở cột SoLuongDon, rồi vẽ một biểu đồ tròn để hiển thị phân bố của cột SoLuongDon nhé.",
+    "response": "min_soluongdon = df['SoLuongDon'].min()\ndf['SoLuongDon'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột SoLuongDon')\nprint('Min cột SoLuongDon:', min_soluongdon)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp dữ liệu theo cột GiaTriTBDon từ lớn đến nhỏ, và tính trung bình của cột GiaTriTBDon sau khi sắp xếp.",
+    "response": "df = df.sort_values('GiaTriTBDon', ascending=False)\nmean_giatritbdon = df['GiaTriTBDon'].mean()\nprint('Trung bình cột GiaTriTBDon:', mean_giatritbdon)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cho tất cả các cột, sau đó tìm giá trị lớn nhất trong số những tổng đó.",
+    "response": "totals = df.sum()\nmax_total = totals.max()\nprint('Tổng các cột:', totals)\nprint('Max của tổng:', max_total)"
+  },
+  {
+    "instruction": "Lọc những giá trị trong cột KhachHangThang lớn hơn 30, rồi sắp xếp chúng theo thứ tự tăng dần dựa trên cột KhachHangThang.",
+    "response": "filtered_khachhangthang = df[df['KhachHangThang'] > 30]\nfiltered_khachhangthang = filtered_khachhangthang.sort_values('KhachHangThang')\nprint(filtered_khachhangthang)"
+  },
+  {
+    "instruction": "Tính trung bình của cột ChiPhiQuangBa trước, rồi vẽ biểu đồ cột cho trung bình của tất cả các cột nhé.",
+    "response": "mean_chiphiquangba = df['ChiPhiQuangBa'].mean()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Trung bình cột ChiPhiQuangBa:', mean_chiphiquangba)\nplt.show()"
+  },
+  {
+    "instruction": "Tìm giá trị lớn nhất của cột DoanhThuKenhOnline, sau đó lọc ra những hàng có giá trị cột DoanhThuKenhOnline lớn hơn 50.",
+    "response": "max_doanhthukenhonline = df['DoanhThuKenhOnline'].max()\nfiltered_doanhthukenhonline = df[df['DoanhThuKenhOnline'] > 50]\nprint('Max cột DoanhThuKenhOnline:', max_doanhthukenhonline)\nprint(filtered_doanhthukenhonline)"
+  },
+  {
+    "instruction": "Sắp xếp dữ liệu tăng dần theo cột TyLeGiuKhach, rồi tính giá trị nhỏ nhất của cột TyLeGiuKhach sau đó.",
+    "response": "df = df.sort_values('TyLeGiuKhach')\nmin_tylegiukhach = df['TyLeGiuKhach'].min()\nprint('Min cột TyLeGiuKhach:', min_tylegiukhach)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng của cột DiemDichVu đi, và vẽ biểu đồ đường cho trung bình của các cột nhé.",
+    "response": "total_diemdichvu = df['DiemDichVu'].sum()\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint('Tổng cột DiemDichVu:', total_diemdichvu)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc những giá trị cột DoanhThuThang vượt quá 40, rồi vẽ biểu đồ tròn cho phân bố của chúng.",
+    "response": "filtered_doanhthuthang = df[df['DoanhThuThang'] > 40]\nfiltered_doanhthuthang['DoanhThuThang'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DoanhThuThang (giá trị > 40)')\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột ChiPhiSanXuat trước, sau đó sắp xếp dữ liệu giảm dần theo cột LoiNhuanThang.",
+    "response": "mean_chiphisanxuat = df['ChiPhiSanXuat'].mean()\ndf = df.sort_values('LoiNhuanThang', ascending=False)\nprint('Trung bình cột ChiPhiSanXuat:', mean_chiphisanxuat)\nprint(df)"
+  },
+  {
+    "instruction": "Tìm min của cột SoLuongDon, rồi lọc ra các giá trị cột SoLuongDon nhỏ hơn 20.",
+    "response": "min_soluongdon = df['SoLuongDon'].min()\nfiltered_soluongdon = df[df['SoLuongDon'] < 20]\nprint('Min cột SoLuongDon:', min_soluongdon)\nprint(filtered_soluongdon)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột GiaTriTBDon, rồi vẽ biểu đồ cột cho trung bình của tất cả các cột.",
+    "response": "df = df.sort_values('GiaTriTBDon')\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng của cột KhachHangThang, và tìm giá trị nhỏ nhất trong cột ChiPhiQuangBa.",
+    "response": "total_khachhangthang = df['KhachHangThang'].sum()\nmin_chiphiquangba = df['ChiPhiQuangBa'].min()\nprint('Tổng cột KhachHangThang:', total_khachhangthang)\nprint('Min cột ChiPhiQuangBa:', min_chiphiquangba)"
+  },
+  {
+    "instruction": "Lọc cột DoanhThuKenhOnline với giá trị lớn hơn 60, rồi tính max của những giá trị đó trong cột DoanhThuKenhOnline.",
+    "response": "filtered_doanhthukenhonline = df[df['DoanhThuKenhOnline'] > 60]\nmax_doanhthukenhonline = filtered_doanhthukenhonline['DoanhThuKenhOnline'].max()\nprint('Max cột DoanhThuKenhOnline (giá trị > 60):', max_doanhthukenhonline)"
+  },
+  {
+    "instruction": "Tính trung bình cột TyLeGiuKhach, sau đó sắp xếp tăng dần theo cột DiemDichVu nhé.",
+    "response": "mean_tylegiukhach = df['TyLeGiuKhach'].mean()\ndf = df.sort_values('DiemDichVu')\nprint('Trung bình cột TyLeGiuKhach:', mean_tylegiukhach)\nprint(df)"
+  },
+  {
+    "instruction": "Tìm max của cột DoanhThuThang trước, rồi vẽ biểu đồ tròn cho cột ChiPhiSanXuat.",
+    "response": "max_doanhthuthang = df['DoanhThuThang'].max()\ndf['ChiPhiSanXuat'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột ChiPhiSanXuat')\nprint('Max cột DoanhThuThang:', max_doanhthuthang)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp cột LoiNhuanThang từ lớn đến nhỏ, rồi tính tổng của cột LoiNhuanThang sau sắp xếp.",
+    "response": "df = df.sort_values('LoiNhuanThang', ascending=False)\ntotal_loinhuanthang = df['LoiNhuanThang'].sum()\nprint('Tổng cột LoiNhuanThang:', total_loinhuanthang)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc những giá trị cột SoLuongDon dưới 30, rồi vẽ biểu đồ cột cho trung bình của chúng.",
+    "response": "filtered_soluongdon = df[df['SoLuongDon'] < 30]\nmean_soluongdon = filtered_soluongdon['SoLuongDon'].mean()\nplt.bar(['SoLuongDon'], [mean_soluongdon])\nplt.title('Biểu đồ cột trung bình cột SoLuongDon (giá trị < 30)')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng cột GiaTriTBDon, sau đó sắp xếp giảm dần theo cột KhachHangThang.",
+    "response": "total_giatritbdon = df['GiaTriTBDon'].sum()\ndf = df.sort_values('KhachHangThang', ascending=False)\nprint('Tổng cột GiaTriTBDon:', total_giatritbdon)\nprint(df)"
+  },
+  {
+    "instruction": "Tìm giá trị nhỏ nhất của cột ChiPhiQuangBa, rồi vẽ biểu đồ đường cho trung bình các cột.",
+    "response": "min_chiphiquangba = df['ChiPhiQuangBa'].min()\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint('Min cột ChiPhiQuangBa:', min_chiphiquangba)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc ra các hàng có cột DoanhThuKenhOnline lớn hơn 70, rồi tính trung bình của chúng.",
+    "response": "filtered_doanhthukenhonline = df[df['DoanhThuKenhOnline'] > 70]\nmean_doanhthukenhonline = filtered_doanhthukenhonline['DoanhThuKenhOnline'].mean()\nprint('Trung bình cột DoanhThuKenhOnline (giá trị > 70):', mean_doanhthukenhonline)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột TyLeGiuKhach, rồi vẽ biểu đồ tròn cho cột TyLeGiuKhach nhé.",
+    "response": "df = df.sort_values('TyLeGiuKhach')\ndf['TyLeGiuKhach'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột TyLeGiuKhach')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính max của cột DiemDichVu trước, sau đó lọc những giá trị cột DiemDichVu lớn hơn 50.",
+    "response": "max_diemdichvu = df['DiemDichVu'].max()\nfiltered_diemdichvu = df[df['DiemDichVu'] > 50]\nprint('Max cột DiemDichVu:', max_diemdichvu)\nprint(filtered_diemdichvu)"
+  },
+  {
+    "instruction": "Tính tổng cột DoanhThuThang đi, và vẽ biểu đồ cột cho trung bình của các cột.",
+    "response": "total_doanhthuthang = df['DoanhThuThang'].sum()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Tổng cột DoanhThuThang:', total_doanhthuthang)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột ChiPhiSanXuat với giá trị nhỏ hơn 40, rồi tìm min của những giá trị đó.",
+    "response": "filtered_chiphisanxuat = df[df['ChiPhiSanXuat'] < 40]\nmin_chiphisanxuat = filtered_chiphisanxuat['ChiPhiSanXuat'].min()\nprint('Min cột ChiPhiSanXuat (giá trị < 40):', min_chiphisanxuat)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần theo cột LoiNhuanThang, rồi vẽ biểu đồ tròn cho cột LoiNhuanThang.",
+    "response": "df = df.sort_values('LoiNhuanThang', ascending=False)\ndf['LoiNhuanThang'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột LoiNhuanThang')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình của cột SoLuongDon, rồi tìm max trong cột GiaTriTBDon.",
+    "response": "mean_soluongdon = df['SoLuongDon'].mean()\nmax_giatritbdon = df['GiaTriTBDon'].max()\nprint('Trung bình cột SoLuongDon:', mean_soluongdon)\nprint('Max cột GiaTriTBDon:', max_giatritbdon)"
+  },
+  {
+    "instruction": "Tính tổng cột KhachHangThang trước, sau đó lọc những giá trị cột KhachHangThang lớn hơn 60.",
+    "response": "total_khachhangthang = df['KhachHangThang'].sum()\nfiltered_khachhangthang = df[df['KhachHangThang'] > 60]\nprint('Tổng cột KhachHangThang:', total_khachhangthang)\nprint(filtered_khachhangthang)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột ChiPhiQuangBa, rồi tính tổng của cột ChiPhiQuangBa.",
+    "response": "df = df.sort_values('ChiPhiQuangBa')\ntotal_chiphiquangba = df['ChiPhiQuangBa'].sum()\nprint('Tổng cột ChiPhiQuangBa:', total_chiphiquangba)\nprint(df)"
+  },
+  {
+    "instruction": "Tìm max của cột DoanhThuKenhOnline, rồi vẽ biểu đồ đường cho trung bình các cột nhé.",
+    "response": "max_doanhthukenhonline = df['DoanhThuKenhOnline'].max()\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint('Max cột DoanhThuKenhOnline:', max_doanhthukenhonline)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột TyLeGiuKhach lớn hơn 50, rồi sắp xếp chúng giảm dần theo cột TyLeGiuKhach.",
+    "response": "filtered_tylegiukhach = df[df['TyLeGiuKhach'] > 50]\nfiltered_tylegiukhach = filtered_tylegiukhach.sort_values('TyLeGiuKhach', ascending=False)\nprint(filtered_tylegiukhach)"
+  },
+  {
+    "instruction": "Tính min của cột DiemDichVu, sau đó vẽ biểu đồ cột cho trung bình các cột.",
+    "response": "min_diemdichvu = df['DiemDichVu'].min()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Min cột DiemDichVu:', min_diemdichvu)\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng cột DoanhThuThang trước, rồi tìm min trong cột ChiPhiSanXuat.",
+    "response": "total_doanhthuthang = df['DoanhThuThang'].sum()\nmin_chiphisanxuat = df['ChiPhiSanXuat'].min()\nprint('Tổng cột DoanhThuThang:', total_doanhthuthang)\nprint('Min cột ChiPhiSanXuat:', min_chiphisanxuat)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột LoiNhuanThang, rồi tính trung bình của cột SoLuongDon.",
+    "response": "df = df.sort_values('LoiNhuanThang')\nmean_soluongdon = df['SoLuongDon'].mean()\nprint('Trung bình cột SoLuongDon:', mean_soluongdon)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc những giá trị cột GiaTriTBDon dưới 50, rồi vẽ biểu đồ tròn cho chúng.",
+    "response": "filtered_giatritbdon = df[df['GiaTriTBDon'] < 50]\nfiltered_giatritbdon['GiaTriTBDon'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột GiaTriTBDon (giá trị < 50)')\nplt.show()"
+  },
+  {
+    "instruction": "Tìm max của cột KhachHangThang, sau đó sắp xếp giảm dần theo cột ChiPhiQuangBa.",
+    "response": "max_khachhangthang = df['KhachHangThang'].max()\ndf = df.sort_values('ChiPhiQuangBa', ascending=False)\nprint('Max cột KhachHangThang:', max_khachhangthang)\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột DoanhThuKenhOnline trước, rồi lọc những giá trị cột DoanhThuKenhOnline lớn hơn 60.",
+    "response": "mean_doanhthukenhonline = df['DoanhThuKenhOnline'].mean()\nfiltered_doanhthukenhonline = df[df['DoanhThuKenhOnline'] > 60]\nprint('Trung bình cột DoanhThuKenhOnline:', mean_doanhthukenhonline)\nprint(filtered_doanhthukenhonline)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột TyLeGiuKhach, rồi vẽ biểu đồ đường cho trung bình các cột.",
+    "response": "df = df.sort_values('TyLeGiuKhach')\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng của cột DiemDichVu đi, rồi tìm max của cột DoanhThuThang.",
+    "response": "total_diemdichvu = df['DiemDichVu'].sum()\nmax_doanhthuthang = df['DoanhThuThang'].max()\nprint('Tổng cột DiemDichVu:', total_diemdichvu)\nprint('Max cột DoanhThuThang:', max_doanhthuthang)"
+  },
+  {
+    "instruction": "Lọc cột ChiPhiSanXuat lớn hơn 70, rồi tính tổng của những giá trị đó.",
+    "response": "filtered_chiphisanxuat = df[df['ChiPhiSanXuat'] > 70]\ntotal_chiphisanxuat = filtered_chiphisanxuat['ChiPhiSanXuat'].sum()\nprint('Tổng cột ChiPhiSanXuat (giá trị > 70):', total_chiphisanxuat)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần theo cột LoiNhuanThang, rồi vẽ biểu đồ cột cho trung bình các cột nhé.",
+    "response": "df = df.sort_values('LoiNhuanThang', ascending=False)\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tìm min của cột SoLuongDon, sau đó sắp xếp tăng dần theo cột GiaTriTBDon.",
+    "response": "min_soluongdon = df['SoLuongDon'].min()\ndf = df.sort_values('GiaTriTBDon')\nprint('Min cột SoLuongDon:', min_soluongdon)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột KhachHangThang trước, rồi vẽ biểu đồ tròn cho cột KhachHangThang.",
+    "response": "total_khachhangthang = df['KhachHangThang'].sum()\ndf['KhachHangThang'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột KhachHangThang')\nprint('Tổng cột KhachHangThang:', total_khachhangthang)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc những giá trị cột ChiPhiQuangBa nhỏ hơn 40, rồi tính trung bình của chúng.",
+    "response": "filtered_chiphiquangba = df[df['ChiPhiQuangBa'] < 40]\nmean_chiphiquangba = filtered_chiphiquangba['ChiPhiQuangBa'].mean()\nprint('Trung bình cột ChiPhiQuangBa (giá trị < 40):', mean_chiphiquangba)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột DoanhThuKenhOnline, rồi tìm max của cột TyLeGiuKhach.",
+    "response": "df = df.sort_values('DoanhThuKenhOnline')\nmax_tylegiukhach = df['TyLeGiuKhach'].max()\nprint('Max cột TyLeGiuKhach:', max_tylegiukhach)\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình của cột DiemDichVu, rồi vẽ biểu đồ cột cho trung bình các cột.",
+    "response": "mean_diemdichvu = df['DiemDichVu'].mean()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Trung bình cột DiemDichVu:', mean_diemdichvu)\nplt.show()"
+  },
+  {
+    "instruction": "Tìm max cột DoanhThuThang trước, rồi lọc những giá trị cột ChiPhiSanXuat nhỏ hơn 50.",
+    "response": "max_doanhthuthang = df['DoanhThuThang'].max()\nfiltered_chiphisanxuat = df[df['ChiPhiSanXuat'] < 50]\nprint('Max cột DoanhThuThang:', max_doanhthuthang)\nprint(filtered_chiphisanxuat)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần theo cột LoiNhuanThang, rồi tính tổng của cột SoLuongDon.",
+    "response": "df = df.sort_values('LoiNhuanThang', ascending=False)\ntotal_soluongdon = df['SoLuongDon'].sum()\nprint('Tổng cột SoLuongDon:', total_soluongdon)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột GiaTriTBDon lớn hơn 60, rồi vẽ biểu đồ tròn cho những giá trị đó.",
+    "response": "filtered_giatritbdon = df[df['GiaTriTBDon'] > 60]\nfiltered_giatritbdon['GiaTriTBDon'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột GiaTriTBDon (giá trị > 60)')\nplt.show()"
+  },
+  {
+    "instruction": "Tìm min của cột KhachHangThang, sau đó sắp xếp tăng dần theo cột ChiPhiQuangBa.",
+    "response": "min_khachhangthang = df['KhachHangThang'].min()\ndf = df.sort_values('ChiPhiQuangBa')\nprint('Min cột KhachHangThang:', min_khachhangthang)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột DoanhThuKenhOnline đi, rồi vẽ biểu đồ tròn cho cột DoanhThuKenhOnline.",
+    "response": "total_doanhthukenhonline = df['DoanhThuKenhOnline'].sum()\ndf['DoanhThuKenhOnline'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DoanhThuKenhOnline')\nprint('Tổng cột DoanhThuKenhOnline:', total_doanhthukenhonline)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc những giá trị cột TyLeGiuKhach dưới 30, rồi tính trung bình của chúng nhé.",
+    "response": "filtered_tylegiukhach = df[df['TyLeGiuKhach'] < 30]\nmean_tylegiukhach = filtered_tylegiukhach['TyLeGiuKhach'].mean()\nprint('Trung bình cột TyLeGiuKhach (giá trị < 30):', mean_tylegiukhach)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột DiemDichVu, rồi vẽ biểu đồ cột cho trung bình các cột.",
+    "response": "df = df.sort_values('DiemDichVu')\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tìm max của cột DoanhThuThang trước, rồi sắp xếp giảm dần theo cột ChiPhiSanXuat.",
+    "response": "max_doanhthuthang = df['DoanhThuThang'].max()\ndf = df.sort_values('ChiPhiSanXuat', ascending=False)\nprint('Max cột DoanhThuThang:', max_doanhthuthang)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột LoiNhuanThang, sau đó lọc những giá trị cột LoiNhuanThang lớn hơn 50.",
+    "response": "total_loinhuanthang = df['LoiNhuanThang'].sum()\nfiltered_loinhuanthang = df[df['LoiNhuanThang'] > 50]\nprint('Tổng cột LoiNhuanThang:', total_loinhuanthang)\nprint(filtered_loinhuanthang)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột SoLuongDon, rồi tìm min của cột GiaTriTBDon.",
+    "response": "df = df.sort_values('SoLuongDon')\nmin_giatritbdon = df['GiaTriTBDon'].min()\nprint('Min cột GiaTriTBDon:', min_giatritbdon)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột KhachHangThang lớn hơn 40, rồi vẽ biểu đồ cột cho trung bình của chúng.",
+    "response": "filtered_khachhangthang = df[df['KhachHangThang'] > 40]\nmean_khachhangthang = filtered_khachhangthang['KhachHangThang'].mean()\nplt.bar(['KhachHangThang'], [mean_khachhangthang])\nplt.title('Biểu đồ cột trung bình cột KhachHangThang (giá trị > 40)')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột ChiPhiQuangBa trước, rồi vẽ biểu đồ tròn cho cột ChiPhiQuangBa.",
+    "response": "mean_chiphiquangba = df['ChiPhiQuangBa'].mean()\ndf['ChiPhiQuangBa'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột ChiPhiQuangBa')\nprint('Trung bình cột ChiPhiQuangBa:', mean_chiphiquangba)\nplt.show()"
+  },
+  {
+    "instruction": "Tìm max của cột DoanhThuKenhOnline, sau đó sắp xếp tăng dần theo cột TyLeGiuKhach.",
+    "response": "max_doanhthukenhonline = df['DoanhThuKenhOnline'].max()\ndf = df.sort_values('TyLeGiuKhach')\nprint('Max cột DoanhThuKenhOnline:', max_doanhthukenhonline)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc những giá trị cột DiemDichVu nhỏ hơn 60, rồi tính tổng của chúng.",
+    "response": "filtered_diemdichvu = df[df['DiemDichVu'] < 60]\ntotal_diemdichvu = filtered_diemdichvu['DiemDichVu'].sum()\nprint('Tổng cột DiemDichVu (giá trị < 60):', total_diemdichvu)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần theo cột DoanhThuThang, rồi vẽ biểu đồ đường cho trung bình các cột nhé.",
+    "response": "df = df.sort_values('DoanhThuThang', ascending=False)\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tìm min của cột ChiPhiSanXuat trước, rồi lọc cột LoiNhuanThang lớn hơn 50.",
+    "response": "min_chiphisanxuat = df['ChiPhiSanXuat'].min()\nfiltered_loinhuanthang = df[df['LoiNhuanThang'] > 50]\nprint('Min cột ChiPhiSanXuat:', min_chiphisanxuat)\nprint(filtered_loinhuanthang)"
+  },
+  {
+    "instruction": "Tính tổng cột SoLuongDon đi, rồi vẽ biểu đồ cột cho trung bình các cột.",
+    "response": "total_soluongdon = df['SoLuongDon'].sum()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Tổng cột SoLuongDon:', total_soluongdon)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột GiaTriTBDon, rồi tính trung bình của cột KhachHangThang.",
+    "response": "df = df.sort_values('GiaTriTBDon')\nmean_khachhangthang = df['KhachHangThang'].mean()\nprint('Trung bình cột KhachHangThang:', mean_khachhangthang)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột ChiPhiQuangBa lớn hơn 50, rồi vẽ biểu đồ tròn cho những giá trị đó.",
+    "response": "filtered_chiphiquangba = df[df['ChiPhiQuangBa'] > 50]\nfiltered_chiphiquangba['ChiPhiQuangBa'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột ChiPhiQuangBa (giá trị > 50)')\nplt.show()"
+  },
+  {
+    "instruction": "Tìm max của cột DoanhThuKenhOnline trước, rồi tính tổng của cột TyLeGiuKhach.",
+    "response": "max_doanhthukenhonline = df['DoanhThuKenhOnline'].max()\ntotal_tylegiukhach = df['TyLeGiuKhach'].sum()\nprint('Max cột DoanhThuKenhOnline:', max_doanhthukenhonline)\nprint('Tổng cột TyLeGiuKhach:', total_tylegiukhach)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần theo cột DiemDichVu, rồi vẽ biểu đồ cột cho trung bình các cột.",
+    "response": "df = df.sort_values('DiemDichVu', ascending=False)\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột DoanhThuThang trước, rồi lọc những giá trị cột ChiPhiSanXuat nhỏ hơn 40.",
+    "response": "mean_doanhthuthang = df['DoanhThuThang'].mean()\nfiltered_chiphisanxuat = df[df['ChiPhiSanXuat'] < 40]\nprint('Trung bình cột DoanhThuThang:', mean_doanhthuthang)\nprint(filtered_chiphisanxuat)"
+  },
+  {
+    "instruction": "Tính tổng của cột LoiNhuanThang đi, sau đó sắp xếp tăng dần theo cột SoLuongDon.",
+    "response": "total_loinhuanthang = df['LoiNhuanThang'].sum()\ndf = df.sort_values('SoLuongDon')\nprint('Tổng cột LoiNhuanThang:', total_loinhuanthang)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột GiaTriTBDon lớn hơn 70, rồi tìm min của những giá trị đó.",
+    "response": "filtered_giatritbdon = df[df['GiaTriTBDon'] > 70]\nmin_giatritbdon = filtered_giatritbdon['GiaTriTBDon'].min()\nprint('Min cột GiaTriTBDon (giá trị > 70):', min_giatritbdon)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột KhachHangThang, rồi vẽ biểu đồ đường cho trung bình các cột nhé.",
+    "response": "df = df.sort_values('KhachHangThang')\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tìm max của cột ChiPhiQuangBa trước, rồi lọc cột DoanhThuKenhOnline nhỏ hơn 50.",
+    "response": "max_chiphiquangba = df['ChiPhiQuangBa'].max()\nfiltered_doanhthukenhonline = df[df['DoanhThuKenhOnline'] < 50]\nprint('Max cột ChiPhiQuangBa:', max_chiphiquangba)\nprint(filtered_doanhthukenhonline)"
+  },
+  {
+    "instruction": "Tính tổng cột TyLeGiuKhach đi, rồi vẽ biểu đồ tròn cho cột TyLeGiuKhach.",
+    "response": "total_tylegiukhach = df['TyLeGiuKhach'].sum()\ndf['TyLeGiuKhach'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột TyLeGiuKhach')\nprint('Tổng cột TyLeGiuKhach:', total_tylegiukhach)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần theo cột DiemDichVu, rồi tính trung bình của cột DoanhThuThang.",
+    "response": "df = df.sort_values('DiemDichVu', ascending=False)\nmean_doanhthuthang = df['DoanhThuThang'].mean()\nprint('Trung bình cột DoanhThuThang:', mean_doanhthuthang)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột ChiPhiSanXuat lớn hơn 60, rồi vẽ biểu đồ cột cho trung bình của chúng.",
+    "response": "filtered_chiphisanxuat = df[df['ChiPhiSanXuat'] > 60]\nmean_chiphisanxuat = filtered_chiphisanxuat['ChiPhiSanXuat'].mean()\nplt.bar(['ChiPhiSanXuat'], [mean_chiphisanxuat])\nplt.title('Biểu đồ cột trung bình cột ChiPhiSanXuat (giá trị > 60)')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Tìm min của cột LoiNhuanThang trước, rồi sắp xếp tăng dần theo cột SoLuongDon.",
+    "response": "min_loinhuanthang = df['LoiNhuanThang'].min()\ndf = df.sort_values('SoLuongDon')\nprint('Min cột LoiNhuanThang:', min_loinhuanthang)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột GiaTriTBDon đi, rồi vẽ biểu đồ cột cho trung bình các cột.",
+    "response": "total_giatritbdon = df['GiaTriTBDon'].sum()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Tổng cột GiaTriTBDon:', total_giatritbdon)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần theo cột KhachHangThang, rồi tìm max của cột ChiPhiQuangBa.",
+    "response": "df = df.sort_values('KhachHangThang')\nmax_chiphiquangba = df['ChiPhiQuangBa'].max()\nprint('Max cột ChiPhiQuangBa:', max_chiphiquangba)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột DoanhThuKenhOnline lớn hơn 50, rồi vẽ biểu đồ tròn cho những giá trị đó nhé.",
+    "response": "filtered_doanhthukenhonline = df[df['DoanhThuKenhOnline'] > 50]\nfiltered_doanhthukenhonline['DoanhThuKenhOnline'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DoanhThuKenhOnline (giá trị > 50)')\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình của cột TyLeGiuKhach trước, rồi sắp xếp giảm dần theo cột DiemDichVu.",
+    "response": "mean_tylegiukhach = df['TyLeGiuKhach'].mean()\ndf = df.sort_values('DiemDichVu', ascending=False)\nprint('Trung bình cột TyLeGiuKhach:', mean_tylegiukhach)\nprint(df)"
+  }
+]

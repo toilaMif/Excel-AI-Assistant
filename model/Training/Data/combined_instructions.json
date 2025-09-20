@@ -1,0 +1,334 @@
+[
+  {
+    "instruction": "Tính tổng cột A rồi sắp xếp tăng dần theo cột B",
+    "response": "total_a = df['A'].sum()\ndf = df.sort_values('B')\nprint('Tổng cột A:', total_a)\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột B rồi tìm max cột C",
+    "response": "mean_b = df['B'].mean()\nmax_c = df['C'].max()\nprint('Trung bình cột B:', mean_b)\nprint('Max cột C:', max_c)"
+  },
+  {
+    "instruction": "Lọc cột A (giá trị > 50) rồi tính tổng cột A",
+    "response": "filtered_a = df[df['A'] > 50]\ntotal_a = filtered_a['A'].sum()\nprint('Tổng cột A (giá trị > 50):', total_a)"
+  },
+  {
+    "instruction": "Tính min cột D rồi vẽ biểu đồ tròn cột D",
+    "response": "min_d = df['D'].min()\ndf['D'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột D')\nprint('Min cột D:', min_d)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột E rồi tính trung bình cột E",
+    "response": "df = df.sort_values('E', ascending=False)\nmean_e = df['E'].mean()\nprint('Trung bình cột E:', mean_e)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng các cột rồi tìm max của tổng",
+    "response": "totals = df.sum()\nmax_total = totals.max()\nprint('Tổng các cột:', totals)\nprint('Max của tổng:', max_total)"
+  },
+  {
+    "instruction": "Lọc cột F (giá trị > 30) rồi sắp xếp tăng dần cột F",
+    "response": "filtered_f = df[df['F'] > 30]\nfiltered_f = filtered_f.sort_values('F')\nprint(filtered_f)"
+  },
+  {
+    "instruction": "Tính trung bình cột G rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "mean_g = df['G'].mean()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Trung bình cột G:', mean_g)\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột H rồi lọc cột H (giá trị > 50)",
+    "response": "max_h = df['H'].max()\nfiltered_h = df[df['H'] > 50]\nprint('Max cột H:', max_h)\nprint(filtered_h)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột I rồi tính min cột I",
+    "response": "df = df.sort_values('I')\nmin_i = df['I'].min()\nprint('Min cột I:', min_i)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột J rồi vẽ biểu đồ đường trung bình các cột",
+    "response": "total_j = df['J'].sum()\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint('Tổng cột J:', total_j)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột A (giá trị > 40) rồi vẽ biểu đồ tròn cột A",
+    "response": "filtered_a = df[df['A'] > 40]\nfiltered_a['A'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột A (giá trị > 40)')\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột B rồi sắp xếp giảm dần cột C",
+    "response": "mean_b = df['B'].mean()\ndf = df.sort_values('C', ascending=False)\nprint('Trung bình cột B:', mean_b)\nprint(df)"
+  },
+  {
+    "instruction": "Tính min cột D rồi lọc cột D (giá trị < 20)",
+    "response": "min_d = df['D'].min()\nfiltered_d = df[df['D'] < 20]\nprint('Min cột D:', min_d)\nprint(filtered_d)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột E rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "df = df.sort_values('E')\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng cột F rồi tìm min cột G",
+    "response": "total_f = df['F'].sum()\nmin_g = df['G'].min()\nprint('Tổng cột F:', total_f)\nprint('Min cột G:', min_g)"
+  },
+  {
+    "instruction": "Lọc cột H (giá trị > 60) rồi tính max cột H",
+    "response": "filtered_h = df[df['H'] > 60]\nmax_h = filtered_h['H'].max()\nprint('Max cột H (giá trị > 60):', max_h)"
+  },
+  {
+    "instruction": "Tính trung bình cột I rồi sắp xếp tăng dần cột J",
+    "response": "mean_i = df['I'].mean()\ndf = df.sort_values('J')\nprint('Trung bình cột I:', mean_i)\nprint(df)"
+  },
+  {
+    "instruction": "Tính max cột A rồi vẽ biểu đồ tròn cột B",
+    "response": "max_a = df['A'].max()\ndf['B'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột B')\nprint('Max cột A:', max_a)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột C rồi tính tổng cột C",
+    "response": "df = df.sort_values('C', ascending=False)\ntotal_c = df['C'].sum()\nprint('Tổng cột C:', total_c)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột D (giá trị < 30) rồi vẽ biểu đồ cột trung bình cột D",
+    "response": "filtered_d = df[df['D'] < 30]\nmean_d = filtered_d['D'].mean()\nplt.bar(['D'], [mean_d])\nplt.title('Biểu đồ cột trung bình cột D (giá trị < 30)')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng cột E rồi sắp xếp giảm dần cột F",
+    "response": "total_e = df['E'].sum()\ndf = df.sort_values('F', ascending=False)\nprint('Tổng cột E:', total_e)\nprint(df)"
+  },
+  {
+    "instruction": "Tính min cột G rồi vẽ biểu đồ đường trung bình các cột",
+    "response": "min_g = df['G'].min()\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint('Min cột G:', min_g)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột H (giá trị > 70) rồi tính trung bình cột H",
+    "response": "filtered_h = df[df['H'] > 70]\nmean_h = filtered_h['H'].mean()\nprint('Trung bình cột H (giá trị > 70):', mean_h)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột I rồi vẽ biểu đồ tròn cột I",
+    "response": "df = df.sort_values('I')\ndf['I'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột I')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột J rồi lọc cột J (giá trị > 50)",
+    "response": "max_j = df['J'].max()\nfiltered_j = df[df['J'] > 50]\nprint('Max cột J:', max_j)\nprint(filtered_j)"
+  },
+  {
+    "instruction": "Tính tổng cột A rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "total_a = df['A'].sum()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Tổng cột A:', total_a)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột B (giá trị < 40) rồi tính min cột B",
+    "response": "filtered_b = df[df['B'] < 40]\nmin_b = filtered_b['B'].min()\nprint('Min cột B (giá trị < 40):', min_b)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột C rồi vẽ biểu đồ tròn cột C",
+    "response": "df = df.sort_values('C', ascending=False)\ndf['C'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột C')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột D rồi tìm max cột E",
+    "response": "mean_d = df['D'].mean()\nmax_e = df['E'].max()\nprint('Trung bình cột D:', mean_d)\nprint('Max cột E:', max_e)"
+  },
+  {
+    "instruction": "Tính tổng cột F rồi lọc cột F (giá trị > 60)",
+    "response": "total_f = df['F'].sum()\nfiltered_f = df[df['F'] > 60]\nprint('Tổng cột F:', total_f)\nprint(filtered_f)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột G rồi tính tổng cột G",
+    "response": "df = df.sort_values('G')\ntotal_g = df['G'].sum()\nprint('Tổng cột G:', total_g)\nprint(df)"
+  },
+  {
+    "instruction": "Tính max cột H rồi vẽ biểu đồ đường trung bình các cột",
+    "response": "max_h = df['H'].max()\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint('Max cột H:', max_h)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột I (giá trị > 50) rồi sắp xếp giảm dần cột I",
+    "response": "filtered_i = df[df['I'] > 50]\nfiltered_i = filtered_i.sort_values('I', ascending=False)\nprint(filtered_i)"
+  },
+  {
+    "instruction": "Tính min cột J rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "min_j = df['J'].min()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Min cột J:', min_j)\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng cột A rồi tìm min cột B",
+    "response": "total_a = df['A'].sum()\nmin_b = df['B'].min()\nprint('Tổng cột A:', total_a)\nprint('Min cột B:', min_b)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột C rồi tính trung bình cột D",
+    "response": "df = df.sort_values('C')\nmean_d = df['D'].mean()\nprint('Trung bình cột D:', mean_d)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột E (giá trị < 50) rồi vẽ biểu đồ tròn cột E",
+    "response": "filtered_e = df[df['E'] < 50]\nfiltered_e['E'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột E (giá trị < 50)')\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột F rồi sắp xếp giảm dần cột G",
+    "response": "max_f = df['F'].max()\ndf = df.sort_values('G', ascending=False)\nprint('Max cột F:', max_f)\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột H rồi lọc cột H (giá trị > 60)",
+    "response": "mean_h = df['H'].mean()\nfiltered_h = df[df['H'] > 60]\nprint('Trung bình cột H:', mean_h)\nprint(filtered_h)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột I rồi vẽ biểu đồ đường trung bình các cột",
+    "response": "df = df.sort_values('I')\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính tổng cột J rồi tính max cột A",
+    "response": "total_j = df['J'].sum()\nmax_a = df['A'].max()\nprint('Tổng cột J:', total_j)\nprint('Max cột A:', max_a)"
+  },
+  {
+    "instruction": "Lọc cột B (giá trị > 70) rồi tính tổng cột B",
+    "response": "filtered_b = df[df['B'] > 70]\ntotal_b = filtered_b['B'].sum()\nprint('Tổng cột B (giá trị > 70):', total_b)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột C rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "df = df.sort_values('C', ascending=False)\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính min cột D rồi sắp xếp tăng dần cột E",
+    "response": "min_d = df['D'].min()\ndf = df.sort_values('E')\nprint('Min cột D:', min_d)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột F rồi vẽ biểu đồ tròn cột F",
+    "response": "total_f = df['F'].sum()\ndf['F'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột F')\nprint('Tổng cột F:', total_f)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột G (giá trị < 40) rồi tính trung bình cột G",
+    "response": "filtered_g = df[df['G'] < 40]\nmean_g = filtered_g['G'].mean()\nprint('Trung bình cột G (giá trị < 40):', mean_g)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột H rồi tính max cột I",
+    "response": "df = df.sort_values('H')\nmax_i = df['I'].max()\nprint('Max cột I:', max_i)\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột J rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "mean_j = df['J'].mean()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Trung bình cột J:', mean_j)\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột A rồi lọc cột B (giá trị < 50)",
+    "response": "max_a = df['A'].max()\nfiltered_b = df[df['B'] < 50]\nprint('Max cột A:', max_a)\nprint(filtered_b)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột C rồi tính tổng cột D",
+    "response": "df = df.sort_values('C', ascending=False)\ntotal_d = df['D'].sum()\nprint('Tổng cột D:', total_d)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột E (giá trị > 60) rồi vẽ biểu đồ tròn cột E",
+    "response": "filtered_e = df[df['E'] > 60]\nfiltered_e['E'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột E (giá trị > 60)')\nplt.show()"
+  },
+  {
+    "instruction": "Tính min cột F rồi sắp xếp tăng dần cột G",
+    "response": "min_f = df['F'].min()\ndf = df.sort_values('G')\nprint('Min cột F:', min_f)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột H rồi vẽ biểu đồ đường trung bình các cột",
+    "response": "total_h = df['H'].sum()\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint('Tổng cột H:', total_h)\nplt.show()"
+  },
+  {
+    "instruction": "Lọc cột I (giá trị < 30) rồi tính trung bình cột I",
+    "response": "filtered_i = df[df['I'] < 30]\nmean_i = filtered_i['I'].mean()\nprint('Trung bình cột I (giá trị < 30):', mean_i)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột J rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "df = df.sort_values('J')\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột A rồi sắp xếp giảm dần cột B",
+    "response": "max_a = df['A'].max()\ndf = df.sort_values('B', ascending=False)\nprint('Max cột A:', max_a)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột C rồi lọc cột C (giá trị > 50)",
+    "response": "total_c = df['C'].sum()\nfiltered_c = df[df['C'] > 50]\nprint('Tổng cột C:', total_c)\nprint(filtered_c)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột D rồi tính min cột E",
+    "response": "df = df.sort_values('D')\nmin_e = df['E'].min()\nprint('Min cột E:', min_e)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột F (giá trị > 40) rồi vẽ biểu đồ cột trung bình cột F",
+    "response": "filtered_f = df[df['F'] > 40]\nmean_f = filtered_f['F'].mean()\nplt.bar(['F'], [mean_f])\nplt.title('Biểu đồ cột trung bình cột F (giá trị > 40)')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột G rồi vẽ biểu đồ tròn cột G",
+    "response": "mean_g = df['G'].mean()\ndf['G'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột G')\nprint('Trung bình cột G:', mean_g)\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột H rồi sắp xếp tăng dần cột I",
+    "response": "max_h = df['H'].max()\ndf = df.sort_values('I')\nprint('Max cột H:', max_h)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột J (giá trị < 60) rồi tính tổng cột J",
+    "response": "filtered_j = df[df['J'] < 60]\ntotal_j = filtered_j['J'].sum()\nprint('Tổng cột J (giá trị < 60):', total_j)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột A rồi vẽ biểu đồ đường trung bình các cột",
+    "response": "df = df.sort_values('A', ascending=False)\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính min cột B rồi lọc cột C (giá trị > 50)",
+    "response": "min_b = df['B'].min()\nfiltered_c = df[df['C'] > 50]\nprint('Min cột B:', min_b)\nprint(filtered_c)"
+  },
+  {
+    "instruction": "Tính tổng cột D rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "total_d = df['D'].sum()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Tổng cột D:', total_d)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột E rồi tính trung bình cột F",
+    "response": "df = df.sort_values('E')\nmean_f = df['F'].mean()\nprint('Trung bình cột F:', mean_f)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột G (giá trị > 50) rồi vẽ biểu đồ tròn cột G",
+    "response": "filtered_g = df[df['G'] > 50]\nfiltered_g['G'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột G (giá trị > 50)')\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột H rồi tính tổng cột I",
+    "response": "max_h = df['H'].max()\ntotal_i = df['I'].sum()\nprint('Max cột H:', max_h)\nprint('Tổng cột I:', total_i)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột J rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "df = df.sort_values('J', ascending=False)\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột A rồi lọc cột B (giá trị < 40)",
+    "response": "mean_a = df['A'].mean()\nfiltered_b = df[df['B'] < 40]\nprint('Trung bình cột A:', mean_a)\nprint(filtered_b)"
+  },
+  {
+    "instruction": "Tính tổng cột C rồi sắp xếp tăng dần cột D",
+    "response": "total_c = df['C'].sum()\ndf = df.sort_values('D')\nprint('Tổng cột C:', total_c)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột E (giá trị > 70) rồi tính min cột E",
+    "response": "filtered_e = df[df['E'] > 70]\nmin_e = filtered_e['E'].min()\nprint('Min cột E (giá trị > 70):', min_e)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột F rồi vẽ biểu đồ đường trung bình các cột",
+    "response": "df = df.sort_values('F')\nmeans = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nprint(df)\nplt.show()"
+  },
+  {
+    "instruction": "Tính max cột G rồi lọc cột H (giá trị < 50)",
+    "response": "max_g = df['G'].max()\nfiltered_h = df[df['H'] < 50]\nprint('Max cột G:', max_g)\nprint(filtered_h)"
+  },
+  {
+    "instruction": "Tính tổng cột I rồi vẽ biểu đồ tròn cột I",
+    "response": "total_i = df['I'].sum()\ndf['I'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột I')\nprint('Tổng cột I:', total_i)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột J rồi tính trung bình cột A",
+    "response": "df = df.sort_values('J', ascending=False)\nmean_a = df['A'].mean()\nprint('Trung bình cột A:', mean_a)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột B (giá trị > 60) rồi vẽ biểu đồ cột trung bình cột B",
+    "response": "filtered_b = df[df['B'] > 60]\nmean_b = filtered_b['B'].mean()\nplt.bar(['B'], [mean_b])\nplt.title('Biểu đồ cột trung bình cột B (giá trị > 60)')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Tính min cột C rồi sắp xếp tăng dần cột D",
+    "response": "min_c = df['C'].min()\ndf = df.sort_values('D')\nprint('Min cột C:', min_c)\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột E rồi vẽ biểu đồ cột trung bình các cột",
+    "response": "total_e = df['E'].sum()\nmeans = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nprint('Tổng cột E:', total_e)\nplt.show()"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột F rồi tính max cột G",
+    "response": "df = df.sort_values('F')\nmax_g = df['G'].max()\nprint('Max cột G:', max_g)\nprint(df)"
+  },
+  {
+    "instruction": "Lọc cột H (giá trị > 50) rồi vẽ biểu đồ tròn cột H",
+    "response": "filtered_h = df[df['H'] > 50]\nfiltered_h['H'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột H (giá trị > 50)')\nplt.show()"
+  },
+  {
+    "instruction": "Tính trung bình cột I rồi sắp xếp giảm dần cột J",
+    "response": "mean_i = df['I'].mean()\ndf = df.sort_values('J', ascending=False)\nprint('Trung bình cột I:', mean_i)\nprint(df)"
+  }
+]

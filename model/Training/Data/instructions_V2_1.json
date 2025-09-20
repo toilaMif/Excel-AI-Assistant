@@ -1,0 +1,330 @@
+[
+  {
+    "instruction": "Hãy tính tổng các giá trị trong cột DoanhThu",
+    "response": "result = df['DoanhThu'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Vui lòng tính tổng các giá trị của cột ChiPhi",
+    "response": "result = df['ChiPhi'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng tất cả các giá trị trong cột LoiNhuan",
+    "response": "result = df['LoiNhuan'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình tổng các giá trị ở cột SoLuongBan nhé",
+    "response": "result = df['SoLuongBan'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy giúp mình tính tổng các giá trị trong cột GiaSanPham",
+    "response": "result = df['GiaSanPham'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng giá trị của cột KhachHangMoi cho mình với",
+    "response": "result = df['KhachHangMoi'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Mình cần tổng các giá trị trong cột ChiPhiQuangCao, bạn tính giúp nhé",
+    "response": "result = df['ChiPhiQuangCao'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tính tổng toàn bộ giá trị ở cột DoanhThuOnline",
+    "response": "result = df['DoanhThuOnline'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình biết tổng các giá trị trong cột TyLeChuyenDoi nha",
+    "response": "result = df['TyLeChuyenDoi'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng giá trị cột DiemDanhGia giúp mình với",
+    "response": "result = df['DiemDanhGia'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tính giá trị trung bình của cột DoanhThu",
+    "response": "result = df['DoanhThu'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Vui lòng cho mình biết trung bình các giá trị trong cột ChiPhi",
+    "response": "result = df['ChiPhi'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị trung bình của toàn bộ cột LoiNhuan nhé",
+    "response": "result = df['LoiNhuan'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Mình muốn biết trung bình các giá trị ở cột SoLuongBan, bạn giúp nhé",
+    "response": "result = df['SoLuongBan'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tính trung bình giá trị của cột GiaSanPham cho mình",
+    "response": "result = df['GiaSanPham'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình trung bình các giá trị trong cột KhachHangMoi với",
+    "response": "result = df['KhachHangMoi'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình giá trị cột ChiPhiQuangCao giúp mình nha",
+    "response": "result = df['ChiPhiQuangCao'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy cho mình biết trung bình các giá trị ở cột DoanhThuOnline",
+    "response": "result = df['DoanhThuOnline'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị trung bình của cột TyLeChuyenDoi giúp mình nhé",
+    "response": "result = df['TyLeChuyenDoi'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Mình cần trung bình giá trị cột DiemDanhGia, bạn tính giúp với",
+    "response": "result = df['DiemDanhGia'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tìm giá trị nhỏ nhất trong cột DoanhThu",
+    "response": "result = df['DoanhThu'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình biết giá trị nhỏ nhất của cột ChiPhi nhé",
+    "response": "result = df['ChiPhi'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị nhỏ nhất trong cột LoiNhuan giúp mình",
+    "response": "result = df['LoiNhuan'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy kiểm tra giá trị nhỏ nhất của cột SoLuongBan",
+    "response": "result = df['SoLuongBan'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Mình muốn biết giá trị nhỏ nhất trong cột GiaSanPham, bạn giúp nhé",
+    "response": "result = df['GiaSanPham'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị nhỏ nhất của cột KhachHangMoi cho mình với",
+    "response": "result = df['KhachHangMoi'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy xác định giá trị nhỏ nhất trong cột ChiPhiQuangCao",
+    "response": "result = df['ChiPhiQuangCao'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình giá trị nhỏ nhất của cột DoanhThuOnline nha",
+    "response": "result = df['DoanhThuOnline'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị nhỏ nhất trong cột TyLeChuyenDoi giúp mình",
+    "response": "result = df['TyLeChuyenDoi'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy cho mình biết giá trị nhỏ nhất của cột DiemDanhGia",
+    "response": "result = df['DiemDanhGia'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tìm giá trị lớn nhất trong cột DoanhThu",
+    "response": "result = df['DoanhThu'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình biết giá trị lớn nhất của cột ChiPhi nhé",
+    "response": "result = df['ChiPhi'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị lớn nhất trong cột LoiNhuan giúp mình",
+    "response": "result = df['LoiNhuan'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy kiểm tra giá trị lớn nhất của cột SoLuongBan",
+    "response": "result = df['SoLuongBan'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Mình muốn biết giá trị lớn nhất trong cột GiaSanPham, bạn giúp nhé",
+    "response": "result = df['GiaSanPham'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị lớn nhất của cột KhachHangMoi cho mình với",
+    "response": "result = df['KhachHangMoi'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy xác định giá trị lớn nhất trong cột ChiPhiQuangCao",
+    "response": "result = df['ChiPhiQuangCao'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình giá trị lớn nhất của cột DoanhThuOnline nha",
+    "response": "result = df['DoanhThuOnline'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị lớn nhất trong cột TyLeChuyenDoi giúp mình",
+    "response": "result = df['TyLeChuyenDoi'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy cho mình biết giá trị lớn nhất của cột DiemDanhGia",
+    "response": "result = df['DiemDanhGia'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy sắp xếp các giá trị trong cột DoanhThu theo thứ tự tăng dần",
+    "response": "df = df.sort_values('DoanhThu')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột ChiPhi theo thứ tự từ nhỏ đến lớn giúp mình nhé",
+    "response": "df = df.sort_values('ChiPhi')\nprint(df)"
+  },
+  {
+    "instruction": "Vui lòng sắp xếp các giá trị trong cột LoiNhuan theo thứ tự tăng dần",
+    "response": "df = df.sort_values('LoiNhuan')\nprint(df)"
+  },
+  {
+    "instruction": "Hãy giúp mình sắp xếp cột SoLuongBan từ nhỏ đến lớn",
+    "response": "df = df.sort_values('SoLuongBan')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp các giá trị trong cột GiaSanPham theo thứ tự tăng dần nha",
+    "response": "df = df.sort_values('GiaSanPham')\nprint(df)"
+  },
+  {
+    "instruction": "Mình muốn sắp xếp cột KhachHangMoi từ nhỏ đến lớn, bạn làm giúp nhé",
+    "response": "df = df.sort_values('KhachHangMoi')\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp cột ChiPhiQuangCao theo thứ tự tăng dần",
+    "response": "df = df.sort_values('ChiPhiQuangCao')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp các giá trị trong cột DoanhThuOnline từ nhỏ đến lớn giúp mình",
+    "response": "df = df.sort_values('DoanhThuOnline')\nprint(df)"
+  },
+  {
+    "instruction": "Vui lòng sắp xếp cột TyLeChuyenDoi theo thứ tự từ nhỏ đến lớn",
+    "response": "df = df.sort_values('TyLeChuyenDoi')\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp cột DiemDanhGia theo thứ tự tăng dần nhé",
+    "response": "df = df.sort_values('DiemDanhGia')\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp các giá trị trong cột DoanhThu theo thứ tự giảm dần",
+    "response": "df = df.sort_values('DoanhThu', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột ChiPhi theo thứ tự từ lớn đến nhỏ giúp mình nhé",
+    "response": "df = df.sort_values('ChiPhi', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Vui lòng sắp xếp các giá trị trong cột LoiNhuan theo thứ tự giảm dần",
+    "response": "df = df.sort_values('LoiNhuan', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy giúp mình sắp xếp cột SoLuongBan từ lớn đến nhỏ",
+    "response": "df = df.sort_values('SoLuongBan', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp các giá trị trong cột GiaSanPham theo thứ tự giảm dần nha",
+    "response": "df = df.sort_values('GiaSanPham', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Mình muốn sắp xếp cột KhachHangMoi từ lớn đến nhỏ, bạn làm giúp nhé",
+    "response": "df = df.sort_values('KhachHangMoi', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp cột ChiPhiQuangCao theo thứ tự giảm dần",
+    "response": "df = df.sort_values('ChiPhiQuangCao', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp các giá trị trong cột DoanhThuOnline từ lớn đến nhỏ giúp mình",
+    "response": "df = df.sort_values('DoanhThuOnline', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Vui lòng sắp xếp cột TyLeChuyenDoi theo thứ tự từ lớn đến nhỏ",
+    "response": "df = df.sort_values('TyLeChuyenDoi', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp cột DiemDanhGia theo thứ tự giảm dần nhé",
+    "response": "df = df.sort_values('DiemDanhGia', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy lọc các giá trị trong cột DoanhThu lớn hơn 50",
+    "response": "filtered_data = df[df['DoanhThu'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc giúp mình các giá trị trong cột ChiPhi lớn hơn 50 nhé",
+    "response": "filtered_data = df[df['ChiPhi'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Vui lòng lọc các giá trị trong cột LoiNhuan lớn hơn 50",
+    "response": "filtered_data = df[df['LoiNhuan'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Hãy lọc các giá trị trong cột SoLuongBan lớn hơn 50 cho mình",
+    "response": "filtered_data = df[df['SoLuongBan'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc các giá trị trong cột GiaSanPham lớn hơn 50 giúp mình nha",
+    "response": "filtered_data = df[df['GiaSanPham'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Mình muốn lọc các giá trị trong cột KhachHangMoi lớn hơn 50, bạn làm giúp nhé",
+    "response": "filtered_data = df[df['KhachHangMoi'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Hãy lọc các giá trị trong cột ChiPhiQuangCao lớn hơn 50",
+    "response": "filtered_data = df[df['ChiPhiQuangCao'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc giúp mình các giá trị trong cột DoanhThuOnline lớn hơn 50",
+    "response": "filtered_data = df[df['DoanhThuOnline'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Vui lòng lọc các giá trị trong cột TyLeChuyenDoi lớn hơn 50",
+    "response": "filtered_data = df[df['TyLeChuyenDoi'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Hãy lọc các giá trị trong cột DiemDanhGia lớn hơn 50 nhé",
+    "response": "filtered_data = df[df['DiemDanhGia'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Hãy vẽ biểu đồ tròn thể hiện phân bố giá trị trong cột DoanhThu",
+    "response": "df['DoanhThu'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DoanhThu')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột ChiPhi để mình xem phân bố giá trị nhé",
+    "response": "df['ChiPhi'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột ChiPhi')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy tạo biểu đồ tròn thể hiện dữ liệu trong cột LoiNhuan",
+    "response": "df['LoiNhuan'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột LoiNhuan')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột SoLuongBan để mình thấy rõ phân bố dữ liệu",
+    "response": "df['SoLuongBan'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột SoLuongBan')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy vẽ biểu đồ tròn cho cột GiaSanPham giúp mình nha",
+    "response": "df['GiaSanPham'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột GiaSanPham')\nplt.show()"
+  },
+  {
+    "instruction": "Mình muốn xem biểu đồ tròn của cột KhachHangMoi, bạn vẽ giúp nhé",
+    "response": "df['KhachHangMoi'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột KhachHangMoi')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy tạo biểu đồ tròn thể hiện phân bố giá trị trong cột ChiPhiQuangCao",
+    "response": "df['ChiPhiQuangCao'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột ChiPhiQuangCao')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột DoanhThuOnline giúp mình nhé",
+    "response": "df['DoanhThuOnline'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DoanhThuOnline')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy vẽ biểu đồ tròn để thể hiện dữ liệu trong cột TyLeChuyenDoi",
+    "response": "df['TyLeChuyenDoi'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột TyLeChuyenDoi')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột DiemDanhGia để mình xem phân bố giá trị nha",
+    "response": "df['DiemDanhGia'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột DiemDanhGia')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy vẽ biểu đồ cột thể hiện giá trị trung bình của tất cả các cột",
+    "response": "means = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ đường thể hiện giá trị trung bình của các cột cho mình nhé",
+    "response": "means = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nplt.show()"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "instruction": "Tính tổng cột A",
+    "response": "result = df['A'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột B",
+    "response": "result = df['B'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột C",
+    "response": "result = df['C'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột D",
+    "response": "result = df['D'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột E",
+    "response": "result = df['E'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột F",
+    "response": "result = df['F'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột G",
+    "response": "result = df['G'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột H",
+    "response": "result = df['H'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột I",
+    "response": "result = df['I'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột J",
+    "response": "result = df['J'].sum()\nprint(result)"
+  },
+
+  {
+    "instruction": "Tính trung bình cột A",
+    "response": "result = df['A'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột B",
+    "response": "result = df['B'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột C",
+    "response": "result = df['C'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột D",
+    "response": "result = df['D'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột E",
+    "response": "result = df['E'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột F",
+    "response": "result = df['F'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột G",
+    "response": "result = df['G'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột H",
+    "response": "result = df['H'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột I",
+    "response": "result = df['I'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột J",
+    "response": "result = df['J'].mean()\nprint(result)"
+  },
+
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột A",
+    "response": "result = df['A'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột B",
+    "response": "result = df['B'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột C",
+    "response": "result = df['C'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột D",
+    "response": "result = df['D'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột E",
+    "response": "result = df['E'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột F",
+    "response": "result = df['F'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột G",
+    "response": "result = df['G'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột H",
+    "response": "result = df['H'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột I",
+    "response": "result = df['I'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất cột J",
+    "response": "result = df['J'].min()\nprint(result)"
+  },
+
+  {
+    "instruction": "Tính giá trị lớn nhất cột A",
+    "response": "result = df['A'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột B",
+    "response": "result = df['B'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột C",
+    "response": "result = df['C'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột D",
+    "response": "result = df['D'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột E",
+    "response": "result = df['E'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột F",
+    "response": "result = df['F'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột G",
+    "response": "result = df['G'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột H",
+    "response": "result = df['H'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột I",
+    "response": "result = df['I'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất cột J",
+    "response": "result = df['J'].max()\nprint(result)"
+  },
+
+  {
+    "instruction": "Sắp xếp tăng dần cột A",
+    "response": "df = df.sort_values('A')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột B",
+    "response": "df = df.sort_values('B')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột C",
+    "response": "df = df.sort_values('C')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột D",
+    "response": "df = df.sort_values('D')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột E",
+    "response": "df = df.sort_values('E')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột F",
+    "response": "df = df.sort_values('F')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột G",
+    "response": "df = df.sort_values('G')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột H",
+    "response": "df = df.sort_values('H')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột I",
+    "response": "df = df.sort_values('I')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp tăng dần cột J",
+    "response": "df = df.sort_values('J')\nprint(df)"
+  },
+
+  {
+    "instruction": "Sắp xếp giảm dần cột A",
+    "response": "df = df.sort_values('A', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột B",
+    "response": "df = df.sort_values('B', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột C",
+    "response": "df = df.sort_values('C', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột D",
+    "response": "df = df.sort_values('D', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột E",
+    "response": "df = df.sort_values('E', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột F",
+    "response": "df = df.sort_values('F', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột G",
+    "response": "df = df.sort_values('G', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột H",
+    "response": "df = df.sort_values('H', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột I",
+    "response": "df = df.sort_values('I', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp giảm dần cột J",
+    "response": "df = df.sort_values('J', ascending=False)\nprint(df)"
+  },
+
+  {
+    "instruction": "Lọc dữ liệu cột A (giá trị > 50)",
+    "response": "filtered_data = df[df['A'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột B (giá trị > 50)",
+    "response": "filtered_data = df[df['B'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột C (giá trị > 50)",
+    "response": "filtered_data = df[df['C'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột D (giá trị > 50)",
+    "response": "filtered_data = df[df['D'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột E (giá trị > 50)",
+    "response": "filtered_data = df[df['E'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột F (giá trị > 50)",
+    "response": "filtered_data = df[df['F'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột G (giá trị > 50)",
+    "response": "filtered_data = df[df['G'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột H (giá trị > 50)",
+    "response": "filtered_data = df[df['H'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột I (giá trị > 50)",
+    "response": "filtered_data = df[df['I'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột J (giá trị > 50)",
+    "response": "filtered_data = df[df['J'] > 50]\nprint(filtered_data)"
+  },
+
+  {
+    "instruction": "Vẽ biểu đồ tròn cột A",
+    "response": "df['A'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột A')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột B",
+    "response": "df['B'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột B')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột C",
+    "response": "df['C'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột C')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột D",
+    "response": "df['D'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột D')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột E",
+    "response": "df['E'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột E')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột F",
+    "response": "df['F'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột F')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột G",
+    "response": "df['G'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột G')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột H",
+    "response": "df['H'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột H')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột I",
+    "response": "df['I'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột I')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cột J",
+    "response": "df['J'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột J')\nplt.show()"
+  },
+
+  {
+    "instruction": "Vẽ biểu đồ cột trung bình các cột",
+    "response": "means = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+
+  {
+    "instruction": "Vẽ biểu đồ đường trung bình các cột",
+    "response": "means = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nplt.show()"
+  }
+]

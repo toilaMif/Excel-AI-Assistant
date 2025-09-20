@@ -1,0 +1,17 @@
+Frontend
+
+    cd eIA-frontend
+    npm install
+    npm install xlsx
+    npm install react-icons
+    npm install react-window
+    npm install axios
+    npm install react-syntax-highlighter
+    npm run dev
+
+Backend
+
+    cd eIA-backend
+    pip install openpyxl
+    pip install fastapi uvicorn python-multipart
+    uvicorn main:app --reload

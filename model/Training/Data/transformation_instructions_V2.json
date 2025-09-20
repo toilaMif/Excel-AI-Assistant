@@ -1,0 +1,430 @@
+[
+  {
+    "instruction": "Hãy cộng thêm 10 vào mỗi giá trị trong cột A và cập nhật lại cột A nhé",
+    "response": "df['A'] = df['A'] + 10\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng của cột A rồi thêm giá trị đó vào cuối cột B",
+    "response": "total_a = df['A'].sum()\ndf.loc[len(df)] = [total_a if col == 'B' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Nhân mỗi giá trị trong cột B với 2 và thay thế cột B bằng kết quả",
+    "response": "df['B'] = df['B'] * 2\nprint(df)"
+  },
+  {
+    "instruction": "Cộng cột C với cột D và lưu kết quả vào cột mới tên E",
+    "response": "df['E'] = df['C'] + df['D']\nprint(df)"
+  },
+  {
+    "instruction": "Thay tất cả giá trị lớn hơn 50 trong cột F bằng 0",
+    "response": "df.loc[df['F'] > 50, 'F'] = 0\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột G rồi nhân mỗi giá trị trong cột H với trung bình đó",
+    "response": "mean_g = df['G'].mean()\ndf['H'] = df['H'] * mean_g\nprint(df)"
+  },
+  {
+    "instruction": "Thêm một hàng mới với giá trị lớn nhất của cột I vào cột J",
+    "response": "max_i = df['I'].max()\nnew_row = {col: 0 for col in df.columns}\nnew_row['J'] = max_i\ndf = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột A với 3 rồi sắp xếp theo thứ tự tăng dần của cột A",
+    "response": "df['A'] = df['A'] * 3\ndf = df.sort_values('A')\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 15 vào cột B và tính tổng mới của cột B",
+    "response": "df['B'] = df['B'] + 15\ntotal_b = df['B'].sum()\nprint('Tổng mới cột B:', total_b)\nprint(df)"
+  },
+  {
+    "instruction": "Thay giá trị nhỏ nhất trong cột C bằng giá trị lớn nhất của cột C",
+    "response": "min_c = df['C'].min()\nmax_c = df['C'].max()\ndf.loc[df['C'] == min_c, 'C'] = max_c\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột D và thêm giá trị đó vào đầu cột E",
+    "response": "total_d = df['D'].sum()\ndf = pd.concat([pd.DataFrame([[total_d if col == 'E' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân mỗi giá trị trong cột F với trung bình của cột F",
+    "response": "mean_f = df['F'].mean()\ndf['F'] = df['F'] * mean_f\nprint(df)"
+  },
+  {
+    "instruction": "Cộng cột G và cột H, lưu vào cột I rồi vẽ biểu đồ cột cho cột I",
+    "response": "df['I'] = df['G'] + df['H']\ndf['I'].plot.bar()\nplt.title('Biểu đồ cột cho cột I')\nplt.show()"
+  },
+  {
+    "instruction": "Thay tất cả giá trị âm trong cột J (nếu có) bằng 0",
+    "response": "df.loc[df['J'] < 0, 'J'] = 0\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột A với 1.5 rồi lọc các giá trị lớn hơn 100",
+    "response": "df['A'] = df['A'] * 1.5\nfiltered_a = df[df['A'] > 100]\nprint(filtered_a)"
+  },
+  {
+    "instruction": "Tính giá trị lớn nhất của cột B và thêm nó vào cuối cột C như một hàng mới",
+    "response": "max_b = df['B'].max()\ndf.loc[len(df)] = [max_b if col == 'C' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 20 vào cột D rồi tính giá trị trung bình mới của cột D",
+    "response": "df['D'] = df['D'] + 20\nmean_d = df['D'].mean()\nprint('Trung bình mới cột D:', mean_d)"
+  },
+  {
+    "instruction": "Nhân cột E với 4 và sắp xếp theo thứ tự giảm dần của cột E",
+    "response": "df['E'] = df['E'] * 4\ndf = df.sort_values('E', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Thay giá trị lớn nhất trong cột F bằng giá trị nhỏ nhất của cột F",
+    "response": "max_f = df['F'].max()\nmin_f = df['F'].min()\ndf.loc[df['F'] == max_f, 'F'] = min_f\nprint(df)"
+  },
+  {
+    "instruction": "Cộng tổng của cột G vào mỗi giá trị trong cột H",
+    "response": "total_g = df['G'].sum()\ndf['H'] = df['H'] + total_g\nprint(df)"
+  },
+  {
+    "instruction": "Tạo cột mới là cột I nhân với 2 và vẽ biểu đồ tròn cho cột mới đó",
+    "response": "df['New_I'] = df['I'] * 2\ndf['New_I'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cho cột New_I')\nplt.show()"
+  },
+  {
+    "instruction": "Thêm 5 vào cột J và tìm giá trị nhỏ nhất mới của cột J",
+    "response": "df['J'] = df['J'] + 5\nmin_j = df['J'].min()\nprint('Min mới cột J:', min_j)"
+  },
+  {
+    "instruction": "Nhân cột A với cột B và lưu kết quả vào cột C",
+    "response": "df['C'] = df['A'] * df['B']\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 30 vào mỗi giá trị trong cột D rồi lọc các giá trị nhỏ hơn 50",
+    "response": "df['D'] = df['D'] + 30\nfiltered_d = df[df['D'] < 50]\nprint(filtered_d)"
+  },
+  {
+    "instruction": "Tính tổng cột E và thêm nó vào đầu cột F",
+    "response": "total_e = df['E'].sum()\ndf = pd.concat([pd.DataFrame([[total_e if col == 'F' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Thay tất cả giá trị 0 trong cột G bằng trung bình của cột G",
+    "response": "mean_g = df['G'].mean()\ndf.loc[df['G'] == 0, 'G'] = mean_g\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột H với 0.5 rồi vẽ biểu đồ đường cho cột H",
+    "response": "df['H'] = df['H'] * 0.5\ndf['H'].plot.line()\nplt.title('Biểu đồ đường cho cột H')\nplt.show()"
+  },
+  {
+    "instruction": "Cộng giá trị lớn nhất của cột I vào cuối cột J",
+    "response": "max_i = df['I'].max()\ndf.loc[len(df)] = [max_i if col == 'J' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Tạo cột mới là tổng của cột A và B, rồi sắp xếp theo cột mới đó",
+    "response": "df['New_AB'] = df['A'] + df['B']\ndf = df.sort_values('New_AB')\nprint(df)"
+  },
+  {
+    "instruction": "Nhân mỗi giá trị trong cột C với giá trị nhỏ nhất của cột C",
+    "response": "min_c = df['C'].min()\ndf['C'] = df['C'] * min_c\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 25 vào cột D và tính giá trị lớn nhất mới",
+    "response": "df['D'] = df['D'] + 25\nmax_d = df['D'].max()\nprint('Max mới cột D:', max_d)"
+  },
+  {
+    "instruction": "Thay các giá trị lớn hơn trung bình trong cột E bằng trung bình của cột E",
+    "response": "mean_e = df['E'].mean()\ndf.loc[df['E'] > mean_e, 'E'] = mean_e\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột F rồi nhân nó với mỗi giá trị trong cột G",
+    "response": "total_f = df['F'].sum()\ndf['G'] = df['G'] * total_f\nprint(df)"
+  },
+  {
+    "instruction": "Thêm hàng mới với giá trị trung bình của cột H vào cột I",
+    "response": "mean_h = df['H'].mean()\nnew_row = {col: 0 for col in df.columns}\nnew_row['I'] = mean_h\ndf = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột J với 3 rồi lọc các giá trị lớn hơn 200",
+    "response": "df['J'] = df['J'] * 3\nfiltered_j = df[df['J'] > 200]\nprint(filtered_j)"
+  },
+  {
+    "instruction": "Cộng 10 vào cột A và vẽ biểu đồ cột cho cột A mới",
+    "response": "df['A'] = df['A'] + 10\ndf['A'].plot.bar()\nplt.title('Biểu đồ cột cho cột A mới')\nplt.show()"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất của cột B rồi thay tất cả giá trị trong cột B bằng giá trị đó",
+    "response": "min_b = df['B'].min()\ndf['B'] = min_b\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột C và thêm nó vào cuối cột D",
+    "response": "total_c = df['C'].sum()\ndf.loc[len(df)] = [total_c if col == 'D' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 40 vào cột E và sắp xếp theo thứ tự tăng dần",
+    "response": "df['E'] = df['E'] + 40\ndf = df.sort_values('E')\nprint(df)"
+  },
+  {
+    "instruction": "Thay các giá trị nhỏ hơn 10 trong cột F bằng 10",
+    "response": "df.loc[df['F'] < 10, 'F'] = 10\nprint(df)"
+  },
+  {
+    "instruction": "Tạo cột mới là cột G nhân với 2 và tính tổng của cột mới",
+    "response": "df['New_G'] = df['G'] * 2\ntotal_new = df['New_G'].sum()\nprint('Tổng cột mới:', total_new)"
+  },
+  {
+    "instruction": "Cộng giá trị lớn nhất của cột H vào mỗi giá trị trong cột I",
+    "response": "max_h = df['H'].max()\ndf['I'] = df['I'] + max_h\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột J với trung bình của cột J rồi vẽ biểu đồ tròn",
+    "response": "mean_j = df['J'].mean()\ndf['J'] = df['J'] * mean_j\ndf['J'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cho cột J')\nplt.show()"
+  },
+  {
+    "instruction": "Cộng 7 vào cột A và tìm giá trị lớn nhất mới của cột A",
+    "response": "df['A'] = df['A'] + 7\nmax_a = df['A'].max()\nprint('Max mới cột A:', max_a)"
+  },
+  {
+    "instruction": "Tính tổng cột B và thêm nó vào đầu cột C",
+    "response": "total_b = df['B'].sum()\ndf = pd.concat([pd.DataFrame([[total_b if col == 'C' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột D với 2.5 rồi lọc các giá trị nhỏ hơn 50",
+    "response": "df['D'] = df['D'] * 2.5\nfiltered_d = df[df['D'] < 50]\nprint(filtered_d)"
+  },
+  {
+    "instruction": "Thay tất cả giá trị trong cột E bằng tổng của cột E",
+    "response": "total_e = df['E'].sum()\ndf['E'] = total_e\nprint(df)"
+  },
+  {
+    "instruction": "Cộng cột F với cột G và lưu vào cột H, rồi sắp xếp theo cột H",
+    "response": "df['H'] = df['F'] + df['G']\ndf = df.sort_values('H')\nprint(df)"
+  },
+  {
+    "instruction": "Tính giá trị nhỏ nhất của cột I và thêm nó vào cuối cột J",
+    "response": "min_i = df['I'].min()\ndf.loc[len(df)] = [min_i if col == 'J' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Nhân mỗi giá trị trong cột A với giá trị lớn nhất của cột A",
+    "response": "max_a = df['A'].max()\ndf['A'] = df['A'] * max_a\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 50 vào cột B và vẽ biểu đồ đường cho cột B",
+    "response": "df['B'] = df['B'] + 50\ndf['B'].plot.line()\nplt.title('Biểu đồ đường cho cột B')\nplt.show()"
+  },
+  {
+    "instruction": "Thay các giá trị lớn hơn 100 trong cột C bằng 100",
+    "response": "df.loc[df['C'] > 100, 'C'] = 100\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột D và nhân nó với mỗi giá trị trong cột E",
+    "response": "mean_d = df['D'].mean()\ndf['E'] = df['E'] * mean_d\nprint(df)"
+  },
+  {
+    "instruction": "Thêm hàng mới với tổng của cột F vào cột G",
+    "response": "total_f = df['F'].sum()\nnew_row = {col: 0 for col in df.columns}\nnew_row['G'] = total_f\ndf = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột H với 1.2 và tính giá trị nhỏ nhất mới",
+    "response": "df['H'] = df['H'] * 1.2\nmin_h = df['H'].min()\nprint('Min mới cột H:', min_h)"
+  },
+  {
+    "instruction": "Cộng 15 vào cột I và lọc các giá trị lớn hơn 80",
+    "response": "df['I'] = df['I'] + 15\nfiltered_i = df[df['I'] > 80]\nprint(filtered_i)"
+  },
+  {
+    "instruction": "Thay tất cả giá trị trong cột J bằng giá trị lớn nhất của cột J",
+    "response": "max_j = df['J'].max()\ndf['J'] = max_j\nprint(df)"
+  },
+  {
+    "instruction": "Tạo cột mới là tổng của cột A và B rồi vẽ biểu đồ cột cho cột mới",
+    "response": "df['New_AB'] = df['A'] + df['B']\ndf['New_AB'].plot.bar()\nplt.title('Biểu đồ cột cho cột New_AB')\nplt.show()"
+  },
+  {
+    "instruction": "Nhân tổng của cột C với mỗi giá trị trong cột D",
+    "response": "total_c = df['C'].sum()\ndf['D'] = df['D'] * total_c\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 35 vào cột E và sắp xếp theo thứ tự giảm dần",
+    "response": "df['E'] = df['E'] + 35\ndf = df.sort_values('E', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Thêm giá trị nhỏ nhất của cột F vào đầu cột G",
+    "response": "min_f = df['F'].min()\ndf = pd.concat([pd.DataFrame([[min_f if col == 'G' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột H với giá trị nhỏ nhất của cột H rồi vẽ biểu đồ tròn",
+    "response": "min_h = df['H'].min()\ndf['H'] = df['H'] * min_h\ndf['H'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cho cột H')\nplt.show()"
+  },
+  {
+    "instruction": "Cộng trung bình của cột I vào mỗi giá trị trong cột J",
+    "response": "mean_i = df['I'].mean()\ndf['J'] = df['J'] + mean_i\nprint(df)"
+  },
+  {
+    "instruction": "Thay các giá trị nhỏ hơn 20 trong cột A bằng 20",
+    "response": "df.loc[df['A'] < 20, 'A'] = 20\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột B và thay tất cả giá trị trong cột B bằng tổng đó",
+    "response": "total_b = df['B'].sum()\ndf['B'] = total_b\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột C với 4 và tính trung bình mới của cột C",
+    "response": "df['C'] = df['C'] * 4\nmean_c = df['C'].mean()\nprint('Trung bình mới cột C:', mean_c)"
+  },
+  {
+    "instruction": "Cộng 45 vào mỗi giá trị trong cột D và vẽ biểu đồ cột",
+    "response": "df['D'] = df['D'] + 45\ndf['D'].plot.bar()\nplt.title('Biểu đồ cột cho cột D')\nplt.show()"
+  },
+  {
+    "instruction": "Thêm hàng mới với giá trị lớn nhất của cột E vào cột F",
+    "response": "max_e = df['E'].max()\nnew_row = {col: 0 for col in df.columns}\nnew_row['F'] = max_e\ndf = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột G với 0.8 rồi lọc các giá trị lớn hơn 30",
+    "response": "df['G'] = df['G'] * 0.8\nfiltered_g = df[df['G'] > 30]\nprint(filtered_g)"
+  },
+  {
+    "instruction": "Cộng tổng của cột H vào đầu cột I",
+    "response": "total_h = df['H'].sum()\ndf = pd.concat([pd.DataFrame([[total_h if col == 'I' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Thay các giá trị lớn hơn 150 trong cột J bằng 150",
+    "response": "df.loc[df['J'] > 150, 'J'] = 150\nprint(df)"
+  },
+  {
+    "instruction": "Tạo cột mới là cột A nhân với 3 và sắp xếp theo cột mới",
+    "response": "df['New_A'] = df['A'] * 3\ndf = df.sort_values('New_A')\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 55 vào cột B và tìm giá trị nhỏ nhất mới của cột B",
+    "response": "df['B'] = df['B'] + 55\nmin_b = df['B'].min()\nprint('Min mới cột B:', min_b)"
+  },
+  {
+    "instruction": "Nhân cột C với trung bình của cột C rồi vẽ biểu đồ đường",
+    "response": "mean_c = df['C'].mean()\ndf['C'] = df['C'] * mean_c\ndf['C'].plot.line()\nplt.title('Biểu đồ đường cho cột C')\nplt.show()"
+  },
+  {
+    "instruction": "Thêm giá trị nhỏ nhất của cột D vào cuối cột E",
+    "response": "min_d = df['D'].min()\ndf.loc[len(df)] = [min_d if col == 'E' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 60 vào cột F và tính tổng mới của cột F",
+    "response": "df['F'] = df['F'] + 60\ntotal_f = df['F'].sum()\nprint('Tổng mới cột F:', total_f)"
+  },
+  {
+    "instruction": "Nhân giá trị lớn nhất của cột G với mỗi giá trị trong cột H",
+    "response": "max_g = df['G'].max()\ndf['H'] = df['H'] * max_g\nprint(df)"
+  },
+  {
+    "instruction": "Thay tất cả giá trị 0 trong cột I bằng giá trị lớn nhất của cột I",
+    "response": "max_i = df['I'].max()\ndf.loc[df['I'] == 0, 'I'] = max_i\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột J và thêm nó vào đầu cột A",
+    "response": "mean_j = df['J'].mean()\ndf = pd.concat([pd.DataFrame([[mean_j if col == 'A' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột B với 5 và lọc các giá trị nhỏ hơn 100",
+    "response": "df['B'] = df['B'] * 5\nfiltered_b = df[df['B'] < 100]\nprint(filtered_b)"
+  },
+  {
+    "instruction": "Cộng 65 vào cột C và vẽ biểu đồ tròn cho cột C",
+    "response": "df['C'] = df['C'] + 65\ndf['C'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cho cột C')\nplt.show()"
+  },
+  {
+    "instruction": "Thêm tổng của cột D vào cuối cột E",
+    "response": "total_d = df['D'].sum()\ndf.loc[len(df)] = [total_d if col == 'E' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột F với 1.8 và tính giá trị lớn nhất mới",
+    "response": "df['F'] = df['F'] * 1.8\nmax_f = df['F'].max()\nprint('Max mới cột F:', max_f)"
+  },
+  {
+    "instruction": "Cộng giá trị nhỏ nhất của cột G vào mỗi giá trị trong cột H",
+    "response": "min_g = df['G'].min()\ndf['H'] = df['H'] + min_g\nprint(df)"
+  },
+  {
+    "instruction": "Thay các giá trị nhỏ hơn trung bình trong cột I bằng trung bình của cột I",
+    "response": "mean_i = df['I'].mean()\ndf.loc[df['I'] < mean_i, 'I'] = mean_i\nprint(df)"
+  },
+  {
+    "instruction": "Tạo cột mới là tổng của cột J và A rồi vẽ biểu đồ đường cho cột mới",
+    "response": "df['New_JA'] = df['J'] + df['A']\ndf['New_JA'].plot.line()\nplt.title('Biểu đồ đường cho cột New_JA')\nplt.show()"
+  },
+  {
+    "instruction": "Nhân cột B với tổng của cột B và sắp xếp theo thứ tự tăng dần",
+    "response": "total_b = df['B'].sum()\ndf['B'] = df['B'] * total_b\ndf = df.sort_values('B')\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 70 vào mỗi giá trị trong cột C và tìm giá trị lớn nhất",
+    "response": "df['C'] = df['C'] + 70\nmax_c = df['C'].max()\nprint('Max cột C:', max_c)"
+  },
+  {
+    "instruction": "Thêm giá trị lớn nhất của cột D vào đầu cột E",
+    "response": "max_d = df['D'].max()\ndf = pd.concat([pd.DataFrame([[max_d if col == 'E' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột F với 0.9 rồi vẽ biểu đồ cột cho cột F",
+    "response": "df['F'] = df['F'] * 0.9\ndf['F'].plot.bar()\nplt.title('Biểu đồ cột cho cột F')\nplt.show()"
+  },
+  {
+    "instruction": "Cộng trung bình của cột G vào cuối cột H",
+    "response": "mean_g = df['G'].mean()\ndf.loc[len(df)] = [mean_g if col == 'H' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Thay các giá trị lớn hơn 200 trong cột I bằng 200",
+    "response": "df.loc[df['I'] > 200, 'I'] = 200\nprint(df)"
+  },
+  {
+    "instruction": "Tính tổng cột J và nhân nó với mỗi giá trị trong cột A",
+    "response": "total_j = df['J'].sum()\ndf['A'] = df['A'] * total_j\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột B với 6 và tính trung bình mới",
+    "response": "df['B'] = df['B'] * 6\nmean_b = df['B'].mean()\nprint('Trung bình cột B:', mean_b)"
+  },
+  {
+    "instruction": "Cộng 80 vào cột C và lọc các giá trị lớn hơn 100",
+    "response": "df['C'] = df['C'] + 80\nfiltered_c = df[df['C'] > 100]\nprint(filtered_c)"
+  },
+  {
+    "instruction": "Thêm giá trị nhỏ nhất của cột D vào cột E như một hàng mới",
+    "response": "min_d = df['D'].min()\nnew_row = {col: 0 for col in df.columns}\nnew_row['E'] = min_d\ndf = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Nhân giá trị lớn nhất của cột F với mỗi giá trị trong cột G",
+    "response": "max_f = df['F'].max()\ndf['G'] = df['G'] * max_f\nprint(df)"
+  },
+  {
+    "instruction": "Thay tất cả giá trị 0 trong cột H bằng giá trị nhỏ nhất của cột H",
+    "response": "min_h = df['H'].min()\ndf.loc[df['H'] == 0, 'H'] = min_h\nprint(df)"
+  },
+  {
+    "instruction": "Tính trung bình cột I và cộng nó vào mỗi giá trị trong cột J",
+    "response": "mean_i = df['I'].mean()\ndf['J'] = df['J'] + mean_i\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột A với 7 rồi vẽ biểu đồ tròn cho cột A",
+    "response": "df['A'] = df['A'] * 7\ndf['A'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cho cột A')\nplt.show()"
+  },
+  {
+    "instruction": "Cộng tổng của cột B vào đầu cột C",
+    "response": "total_b = df['B'].sum()\ndf = pd.concat([pd.DataFrame([[total_b if col == 'C' else 0 for col in df.columns]], columns=df.columns), df], ignore_index=True)\nprint(df)"
+  },
+  {
+    "instruction": "Thay giá trị lớn nhất trong cột D bằng 0",
+    "response": "max_d = df['D'].max()\ndf.loc[df['D'] == max_d, 'D'] = 0\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột E với 2 và sắp xếp theo thứ tự giảm dần của cột E",
+    "response": "df['E'] = df['E'] * 2\ndf = df.sort_values('E', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Cộng 90 vào cột F và tính giá trị nhỏ nhất mới",
+    "response": "df['F'] = df['F'] + 90\nmin_f = df['F'].min()\nprint('Min cột F:', min_f)"
+  },
+  {
+    "instruction": "Cộng trung bình của cột G vào cuối cột H",
+    "response": "mean_g = df['G'].mean()\ndf.loc[len(df)] = [mean_g if col == 'H' else 0 for col in df.columns]\nprint(df)"
+  },
+  {
+    "instruction": "Nhân cột I với tổng của cột I rồi lọc các giá trị nhỏ hơn 500",
+    "response": "total_i = df['I'].sum()\ndf['I'] = df['I'] * total_i\nfiltered_i = df[df['I'] < 500]\nprint(filtered_i)"
+  },
+  {
+    "instruction": "Cộng giá trị lớn nhất của cột J vào mỗi giá trị trong cột A",
+    "response": "max_j = df['J'].max()\ndf['A'] = df['A'] + max_j\nprint(df)"
+  }
+]

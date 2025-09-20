@@ -1,0 +1,339 @@
+[
+  {
+    "instruction": "Bạn có thể tính tổng tất cả các giá trị trong cột A được không?",
+    "response": "result = df['A'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tính tổng của cột B cho mình nhé.",
+    "response": "result = df['B'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng các giá trị trong cột C đi nào!",
+    "response": "result = df['C'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình tổng của cột D với, nhanh lên nhé!",
+    "response": "result = df['D'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Cộng tất cả các giá trị trong cột E lại xem nào.",
+    "response": "result = df['E'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột F giúp mình, cảm ơn nha!",
+    "response": "result = df['F'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tìm tổng của cột G cho mình nhé, làm nhanh chút!",
+    "response": "result = df['G'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Cộng hết các giá trị trong cột H lại xem kết quả bao nhiêu.",
+    "response": "result = df['H'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Tính tổng cột I đi, mình đang cần gấp đây!",
+    "response": "result = df['I'].sum()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình tổng của cột J nhé, cảm ơn nhiều!",
+    "response": "result = df['J'].sum()\nprint(result)"
+  },
+
+  {
+    "instruction": "Bạn tính trung bình các giá trị trong cột A giúp mình được không?",
+    "response": "result = df['A'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy cho mình biết trung bình của cột B là bao nhiêu nhé.",
+    "response": "result = df['B'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột C xem sao, mình tò mò lắm!",
+    "response": "result = df['C'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm trung bình của cột D giúp mình nha, nhanh lên nào!",
+    "response": "result = df['D'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Coi thử trung bình cột E là bao nhiêu đi, cảm ơn bạn!",
+    "response": "result = df['E'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình cột F cho mình với, làm nhanh nhé!",
+    "response": "result = df['F'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tính trung bình các giá trị trong cột G giùm mình.",
+    "response": "result = df['G'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình biết trung bình cột H là bao nhiêu, cảm ơn nha!",
+    "response": "result = df['H'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Tính trung bình của cột I đi, mình cần số liệu ngay đây!",
+    "response": "result = df['I'].mean()\nprint(result)"
+  },
+  {
+    "instruction": "Bạn tính trung bình cột J giúp mình được không, nhanh lên nhé!",
+    "response": "result = df['J'].mean()\nprint(result)"
+  },
+
+  {
+    "instruction": "Tìm giá trị nhỏ nhất trong cột A cho mình với!",
+    "response": "result = df['A'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tìm giá trị nhỏ nhất của cột B xem nào.",
+    "response": "result = df['B'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình biết giá trị nhỏ nhất trong cột C nhé, nhanh lên!",
+    "response": "result = df['C'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm min của cột D giúp mình, cảm ơn bạn nhiều!",
+    "response": "result = df['D'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Xem giá trị nhỏ nhất của cột E là bao nhiêu đi nào!",
+    "response": "result = df['E'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị nhỏ nhất trong cột F giúp mình nhé!",
+    "response": "result = df['F'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy kiểm tra giá trị nhỏ nhất của cột G cho mình nha.",
+    "response": "result = df['G'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình giá trị nhỏ nhất trong cột H, nhanh lên nhé!",
+    "response": "result = df['H'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm min của cột I giùm mình, cảm ơn bạn!",
+    "response": "result = df['I'].min()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tìm giá trị nhỏ nhất trong cột J cho mình nhé!",
+    "response": "result = df['J'].min()\nprint(result)"
+  },
+
+  {
+    "instruction": "Tìm giá trị lớn nhất trong cột A giúp mình với!",
+    "response": "result = df['A'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy cho mình biết giá trị lớn nhất của cột B nhé.",
+    "response": "result = df['B'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm max của cột C xem là bao nhiêu, nhanh lên nào!",
+    "response": "result = df['C'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình giá trị lớn nhất trong cột D, cảm ơn nha!",
+    "response": "result = df['D'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tìm giá trị lớn nhất của cột E cho mình nhé!",
+    "response": "result = df['E'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm max của cột F giúp mình, làm nhanh chút nhé!",
+    "response": "result = df['F'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Xem giá trị lớn nhất trong cột G là bao nhiêu đi nào!",
+    "response": "result = df['G'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Tìm giá trị lớn nhất của cột H cho mình, cảm ơn bạn!",
+    "response": "result = df['H'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Hãy tìm max của cột I giúp mình nhé, nhanh lên!",
+    "response": "result = df['I'].max()\nprint(result)"
+  },
+  {
+    "instruction": "Cho mình giá trị lớn nhất trong cột J, cảm ơn nhiều!",
+    "response": "result = df['J'].max()\nprint(result)"
+  },
+
+  {
+    "instruction": "Sắp xếp bảng theo cột A từ nhỏ đến lớn cho mình nhé!",
+    "response": "df = df.sort_values('A')\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp dữ liệu theo cột B tăng dần giúp mình nha.",
+    "response": "df = df.sort_values('B')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột C từ nhỏ đến lớn xem nào, nhanh lên nhé!",
+    "response": "df = df.sort_values('C')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp bảng theo cột D tăng dần giúp mình, cảm ơn bạn!",
+    "response": "df = df.sort_values('D')\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp cột E theo thứ tự tăng dần cho mình nhé!",
+    "response": "df = df.sort_values('E')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột F từ nhỏ đến lớn đi, làm nhanh chút nha!",
+    "response": "df = df.sort_values('F')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp dữ liệu theo cột G tăng dần giúp mình với!",
+    "response": "df = df.sort_values('G')\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp bảng theo cột H từ nhỏ đến lớn nhé, cảm ơn!",
+    "response": "df = df.sort_values('H')\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột I tăng dần cho mình, nhanh lên nào!",
+    "response": "df = df.sort_values('I')\nprint(df)"
+  },
+  {
+    "instruction": "Cho mình sắp xếp bảng theo cột J từ nhỏ đến lớn nha!",
+    "response": "df = df.sort_values('J')\nprint(df)"
+  },
+
+  {
+    "instruction": "Sắp xếp bảng theo cột A từ lớn đến nhỏ giúp mình nhé!",
+    "response": "df = df.sort_values('A', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp dữ liệu theo cột B giảm dần cho mình nha.",
+    "response": "df = df.sort_values('B', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột C từ lớn đến nhỏ xem nào, nhanh lên nhé!",
+    "response": "df = df.sort_values('C', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp bảng theo cột D giảm dần giúp mình, cảm ơn bạn!",
+    "response": "df = df.sort_values('D', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp cột E theo thứ tự giảm dần cho mình nhé!",
+    "response": "df = df.sort_values('E', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột F từ lớn đến nhỏ đi, làm nhanh chút nha!",
+    "response": "df = df.sort_values('F', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp dữ liệu theo cột G giảm dần giúp mình với!",
+    "response": "df = df.sort_values('G', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Hãy sắp xếp bảng theo cột H từ lớn đến nhỏ nhé, cảm ơn!",
+    "response": "df = df.sort_values('H', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Sắp xếp cột I giảm dần cho mình, nhanh lên nào!",
+    "response": "df = df.sort_values('I', ascending=False)\nprint(df)"
+  },
+  {
+    "instruction": "Cho mình sắp xếp bảng theo cột J từ lớn đến nhỏ nha!",
+    "response": "df = df.sort_values('J', ascending=False)\nprint(df)"
+  },
+
+  {
+    "instruction": "Lọc ra những hàng mà cột A có giá trị lớn hơn 50 cho mình nhé!",
+    "response": "filtered_data = df[df['A'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Hãy lọc các hàng có giá trị cột B trên 50 giúp mình nha.",
+    "response": "filtered_data = df[df['B'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột C với giá trị lớn hơn 50 xem nào, nhanh lên nhé!",
+    "response": "filtered_data = df[df['C'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc các hàng trong cột D có giá trị trên 50 giúp mình, cảm ơn bạn!",
+    "response": "filtered_data = df[df['D'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Hãy lọc cột E với các giá trị lớn hơn 50 cho mình nhé!",
+    "response": "filtered_data = df[df['E'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc cột F với giá trị trên 50 đi, làm nhanh chút nha!",
+    "response": "filtered_data = df[df['F'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc dữ liệu cột G có giá trị lớn hơn 50 giúp mình với!",
+    "response": "filtered_data = df[df['G'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Hãy lọc các hàng trong cột H có giá trị trên 50 nhé, cảm ơn!",
+    "response": "filtered_data = df[df['H'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Lọc cột I với các giá trị lớn hơn 50 cho mình, nhanh lên nào!",
+    "response": "filtered_data = df[df['I'] > 50]\nprint(filtered_data)"
+  },
+  {
+    "instruction": "Cho mình lọc các hàng trong cột J có giá trị trên 50 nha!",
+    "response": "filtered_data = df[df['J'] > 50]\nprint(filtered_data)"
+  },
+
+  {
+    "instruction": "Vẽ biểu đồ tròn để xem phân bố của cột A nhé, làm nhanh giúp mình!",
+    "response": "df['A'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột A')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy vẽ biểu đồ tròn cho cột B, mình muốn xem phân bố thế nào!",
+    "response": "df['B'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột B')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột C đi, mình tò mò về dữ liệu này lắm!",
+    "response": "df['C'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột C')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột D giúp mình, cảm ơn bạn nhiều nhé!",
+    "response": "df['D'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột D')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy vẽ biểu đồ tròn để xem phân bố cột E nha, nhanh lên nào!",
+    "response": "df['E'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột E')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột F đi, mình muốn xem dữ liệu thế nào!",
+    "response": "df['F'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột F')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột G giúp mình, làm nhanh chút nhé!",
+    "response": "df['G'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột G')\nplt.show()"
+  },
+  {
+    "instruction": "Hãy vẽ biểu đồ tròn để xem phân bố của cột H, cảm ơn nha!",
+    "response": "df['H'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột H')\nplt.show()"
+  },
+  {
+    "instruction": "Vẽ biểu đồ tròn cho cột I đi, mình cần xem ngay đây!",
+    "response": "df['I'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột I')\nplt.show()"
+  },
+  {
+    "instruction": "Cho mình biểu đồ tròn của cột J nhé, cảm ơn nhiều!",
+    "response": "df['J'].value_counts().plot.pie(autopct='%1.1f%%')\nplt.title('Biểu đồ tròn cột J')\nplt.show()"
+  },
+
+  {
+    "instruction": "Vẽ biểu đồ cột để so sánh trung bình của tất cả các cột giúp mình nhé!",
+    "response": "means = df.mean()\nplt.bar(means.index, means.values)\nplt.title('Biểu đồ cột trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.show()"
+  },
+
+  {
+    "instruction": "Hãy vẽ biểu đồ đường thể hiện trung bình của các cột, mình muốn xem xu hướng thế nào!",
+    "response": "means = df.mean()\nplt.plot(means.index, means.values, marker='o')\nplt.title('Biểu đồ đường trung bình các cột')\nplt.xlabel('Cột')\nplt.ylabel('Giá trị trung bình')\nplt.grid(True)\nplt.show()"
+  }
+]
