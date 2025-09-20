@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+}
+.Excel_Spreadsheet {
+  float: left;
+  width: 75vw;
+  color: white;
+  height: 95vh;
+}
+.file-upload {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px dashed #888;
+  border-radius: 10px;
+  max-width: 400px;
+  background: #000000;
+}
+
+.upload-box {
+  display: block;
+  cursor: pointer;
+  padding: 20px;
+  color: #444;
+}
+
+.upload-box h2 {
+  margin: 10px 0;
+}
+
+.upload-box p {
+  color: #666;
+  font-size: 14px;
+}
+
+.selected-file {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
